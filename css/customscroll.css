@@ -126,9 +126,9 @@
 	margin-left:-40px;
 	float:right;
 }
-.mCustomScrollBox{
-	-ms-touch-action:none; /*MSPointer events - direct all pointer events to js*/
-}
+/*.mCustomScrollBox{
+	-ms-touch-action: none; MSPointer events - direct all pointer events to js
+}*/
 
 /* default scrollbar colors and backgrounds (default theme) */
 .mCustomScrollBox>.mCSB_scrollTools{
