@@ -5,24 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Курсовая работа</title>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
-  <link rel="stylesheet" href="/css/simplebar.css">  
-  <link rel="stylesheet" href="/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/choices.min.css">
-  <link rel="stylesheet" href="/css/jquery-ui.css">
-  <link rel="stylesheet" href="/css/customscroll.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <link rel="stylesheet" href="css/simplebar.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/customscroll.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header-top">
       <div class="container header_container1">
-        <button class="burger_btn" aria-label="Меню"></button>
-        <img class="header_logo" src="/img/Лого.svg" alt="Blanchard художественная галерея">
-        <button class="search_btn" aria-label="Поиск"></button>
+        <button id="burger_btn" class="burger_btn" aria-label="Меню"></button>
+        <img class="header_logo logo_top" src="img/Лого.svg" alt="Blanchard художественная галерея">
+        <button id="search_btn" class="search_btn" aria-label="Поиск"></button>
+        <form id="header_form" class="header_form" tabindex="0">
+          <label class="form_label" tabindex="0">
+            <input aria-label="Введите поисковой запрос" class="header_bot_input" type="text" name="search"
+              placeholder="Поиск по сайту" tabindex="0">
+          </label>
+        </form>
         <nav id="menu_link" class="header_nav">
           <ul class="header_list">
             <li class="header_item"><a class="header_el focus hover active" href="#about">О нас</a></li>
@@ -34,100 +38,103 @@
             <li class="header_item"><a class="header_el focus hover active" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <a class="header_link focus hover" href="#">Войти</a>
+        <a id="header_link" class="header_link focus hover" href="#">Войти</a>
       </div>
     </div>
 
     <div class="header-bot">
       <div class="container header_container2">
         <ul class="header_bot_list">
-          <li class="header_bot_link">
-            <select class="header_bot_selects select2">
-              <option value="A">Реализм</option>
-              <option value="B">Вариант1</option>
-              <option value="C">Вариант2</option>
-              <option value="D">Вариант3</option>
-              <option value="E">Вариант4</option>
-              <option value="F">Вариант5</option>
-              <option value="G">Вариант6</option>
-              <option value="H">Вариант7</option>
-              <option value="I">Вариант8</option>
-              <option value="J">Вариант9</option>
-            </select>
+          <li class="header_bot_link">aria
+            <button aria-label="категория искусства Реализм" id="header_bot_click1"
+              class="header_bot_selects hover active focus" tabindex="0">Реализм</button>
+            <ul id="header_bot-ul1" class="header_bot-ul" data-simplebar>
+              <li class="header_bot-item" tabindex="0">Вариант1</li>
+              <li class="header_bot-item" tabindex="0">Вариант2</li>
+              <li class="header_bot-item" tabindex="0">Вариант3</li>
+              <li class="header_bot-item" tabindex="0">Вариант4</li>
+              <li class="header_bot-item" tabindex="0">Вариант5</li>
+              <li class="header_bot-item" tabindex="0">Вариант6</li>
+              <li class="header_bot-item" tabindex="0">Вариант7</li>
+              <li class="header_bot-item" tabindex="0">Вариант8</li>
+              <li class="header_bot-item" tabindex="0">Вариант9</li>
+              <li class="header_bot-item" tabindex="0">Вариант10</li>
+            </ul>
           </li>
           <li class="header_bot_link">
-            <select class="header_bot_selects">
-              <option>Импрессионизм</option>
-              <option>Вариант1</option>
-              <option>Вариант2</option>
-              <option>Вариант3</option>
-              <option>Вариант4</option>
-              <option>Вариант5</option>
-              <option>Вариант6</option>
-              <option>Вариант7</option>
-              <option>Вариант8</option>
-              <option>Вариант9</option>
-            </select>
+            <button aria-label="категория искусства Импрессионизм" id="header_bot_click2"
+              class="header_bot_selects hover active focus" tabindex="0">Импрессионизм</button>
+            <ul id="header_bot-ul2" class="header_bot-ul" data-simplebar>
+              <li class="header_bot-item" tabindex="0">Вариант1</li>
+              <li class="header_bot-item" tabindex="0">Вариант2</li>
+              <li class="header_bot-item" tabindex="0">Вариант3</li>
+              <li class="header_bot-item" tabindex="0">Вариант4</li>
+              <li class="header_bot-item" tabindex="0">Вариант5</li>
+              <li class="header_bot-item" tabindex="0">Вариант6</li>
+              <li class="header_bot-item" tabindex="0">Вариант7</li>
+              <li class="header_bot-item" tabindex="0">Вариант8</li>
+              <li class="header_bot-item" tabindex="0">Вариант9</li>
+              <li class="header_bot-item" tabindex="0">Вариант10</li>
+            </ul>
           </li>
           <li class="header_bot_link">
-            <select class="header_bot_selects">
-              <option>Постимпрессионизм</option>
-              <option>Вариант1</option>
-              <option>Вариант2</option>
-              <option>Вариант3</option>
-              <option>Вариант4</option>
-              <option>Вариант5</option>
-              <option>Вариант6</option>
-              <option>Вариант7</option>
-              <option>Вариант8</option>
-              <option>Вариант9</option>
-            </select>
+            <button aria-label="категория искусства Постимпрессионизм" id="header_bot_click3"
+              class="header_bot_selects hover active focus" tabindex="0">Постимпрессионизм</button>
+            <ul id="header_bot-ul3" class="header_bot-ul" data-simplebar>
+              <li class="header_bot-item" tabindex="0">Вариант1</li>
+              <li class="header_bot-item" tabindex="0">Вариант2</li>
+              <li class="header_bot-item" tabindex="0">Вариант3</li>
+              <li class="header_bot-item" tabindex="0">Вариант4</li>
+              <li class="header_bot-item" tabindex="0">Вариант5</li>
+              <li class="header_bot-item" tabindex="0">Вариант6</li>
+              <li class="header_bot-item" tabindex="0">Вариант7</li>
+              <li class="header_bot-item" tabindex="0">Вариант8</li>
+              <li class="header_bot-item" tabindex="0">Вариант9</li>
+              <li class="header_bot-item" tabindex="0">Вариант10</li>
+            </ul>
           </li>
           <li class="header_bot_link">
-            <select class="header_bot_selects">
-              <option>Авангард</option>
-              <option>Вариант1</option>
-              <option>Вариант2</option>
-              <option>Вариант3</option>
-              <option>Вариант4</option>
-              <option>Вариант5</option>
-              <option>Вариант6</option>
-              <option>Вариант7</option>
-              <option>Вариант8</option>
-              <option>Вариант9</option>
-            </select>
+            <button aria-label="категория искусства авангард" id="header_bot_click4"
+              class="header_bot_selects hover active focus" tabindex="0">Авангард</button>
+            <ul id="header_bot-ul4" class="header_bot-ul" data-simplebar>
+              <li class="header_bot-item" tabindex="0">Вариант1</li>
+              <li class="header_bot-item" tabindex="0">Вариант2</li>
+              <li class="header_bot-item" tabindex="0">Вариант3</li>
+              <li class="header_bot-item" tabindex="0">Вариант4</li>
+              <li class="header_bot-item" tabindex="0">Вариант5</li>
+              <li class="header_bot-item" tabindex="0">Вариант6</li>
+              <li class="header_bot-item" tabindex="0">Вариант7</li>
+              <li class="header_bot-item" tabindex="0">Вариант8</li>
+              <li class="header_bot-item" tabindex="0">Вариант9</li>
+              <li class="header_bot-item" tabindex="0">Вариант10</li>
+            </ul>
           </li>
           <li class="header_bot_link">
-            <select class="header_bot_selects">
-              <option>Футуризм</option>
-              <option>Вариант1</option>
-              <option>Вариант2</option>
-              <option>Вариант3</option>
-              <option>Вариант4</option>
-              <option>Вариант5</option>
-              <option>Вариант6</option>
-              <option>Вариант7</option>
-              <option>Вариант8</option>
-              <option>Вариант9</option>
-            </select>
+            <button aria-label="категория искусства футуризм" id="header_bot_click5"
+              class="header_bot_selects hover active focus" tabindex="0">Футуризм</button>
+            <ul id="header_bot-ul5" class="header_bot-ul" data-simplebar>
+              <li class="header_bot-item" tabindex="0">Вариант1</li>
+              <li class="header_bot-item" tabindex="0">Вариант2</li>
+              <li class="header_bot-item" tabindex="0">Вариант3</li>
+              <li class="header_bot-item" tabindex="0">Вариант4</li>
+              <li class="header_bot-item" tabindex="0">Вариант5</li>
+              <li class="header_bot-item" tabindex="0">Вариант6</li>
+              <li class="header_bot-item" tabindex="0">Вариант7</li>
+              <li class="header_bot-item" tabindex="0">Вариант8</li>
+              <li class="header_bot-item" tabindex="0">Вариант9</li>
+              <li class="header_bot-item" tabindex="0">Вариант10</li>
+            </ul>
           </li>
         </ul>
-        <form class="header_bot_form">
-          <label class="form_label">
-            <input aria-label="Введите поисковой запрос" class="header_bot_input" type="text" name="search"
-              placeholder="Поиск по сайту">
-          </label>
-          <!-- <button aria-label="Поиск" class="header_bot_btn"></button> -->
-        </form>
       </div>
     </div>
   </header>
 
   <section id="hero" class="hero">
     <div class="container">
-      <h1 class="hero_head">
+      <h2 class="hero_head">
         Прикоснитесь к прекрасному
-      </h1>
+      </h2>
       <p class="hero_text">
         Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
         предложений.
@@ -152,14 +159,16 @@
   </section>
 
   <section id="gallery" class="gallery">
-    <div class="container">
+    <div class="container container_gallery">
       <div class="gallery_block">
-        <h2 class="gallery_h2 style_2">Галерея</h2>
-        <div class="gallery_text">Фильтровать по:</div>
+        <div class="gallery_top">
+          <h2 class="gallery_head style_2">Галерея</h2>
+          <div class="gallery_text">Фильтровать по:</div>
 
-        <div class="gallery_list1">Автор</div>
-        <div class="gallery_list2">Направление</div>
-        <div class="gallery_list3">Техника</div>
+          <div class="gallery_item1">Автор</div>
+          <div class="gallery_item2">Направление</div>
+          <div class="gallery_item3">Техника</div>
+        </div>
 
         <div class="gallery_description gallery_description1">
           Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
@@ -167,7 +176,7 @@
         </div>
       </div>
       <div class="start_swiper-container swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper start_swiper-wrapper">
           <div class="swiper-slide gallery_img"><img src="img/slide/Rectangle1.jpg" alt="Картина маслом"></div>
           <div class="swiper-slide gallery_img"><img src="img/slide/Rectangle2.jpg" alt="Картина маслом"></div>
           <div class="swiper-slide gallery_img"><img src="img/slide/Rectangle3.jpg" alt="Картина маслом"></div>
@@ -200,8 +209,8 @@
           <div class="swiper-slide gallery_img"><img src="img/slide/Rectangle30.jpg" alt="Картина маслом"></div>
         </div>
         <div class="start_swiper-pagination"></div>
-        <div class="start_swiper-prev prev-condition"></div>
-        <div class="start_swiper-next next-condition"></div>
+        <div aria-label="галерея кнопка назад" tabindex="0" class="start_swiper-prev prev-condition"></div>
+        <div aria-label="галерея кнопка вперед" tabindex="0" class="start_swiper-next next-condition"></div>
       </div>
       <div class="gallery_description gallery_description2">
         Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
@@ -211,18 +220,18 @@
   </section>
   <section id="catalog" class="catalog">
     <div class="container">
-      <div class="catalog_head">
-        <h2 class="catalog_h2 style_2">Каталог</h2>
+      <div class="catalog_top">
+        <h2 class="catalog_head style_2">Каталог</h2>
         <ul class="catalog_lang">
-          <li id="btn_1" class="catalog_btn"><img id="btn_img1" class="catalog_svg" src="/img/france.svg"
+          <li id="btn_1" class="catalog_btn"><img aria-label="кнопка франция" tabindex="0" id="btn_img1" class="catalog_svg" src="img/france.svg"
               alt="Кнопка франция"></li>
-          <li id="btn_2" class="catalog_btn"><img id="btn_img2" class="catalog_svg" src="/img/germany.svg"
+          <li id="btn_2" class="catalog_btn"><img aria-label="кнопка германия" tabindex="0" id="btn_img2" class="catalog_svg" src="img/germany.svg"
               alt="Кнопка германия"></li>
-          <li id="btn_3" class="catalog_btn"><img id="btn_img3" class="catalog_svg" src="/img/italian.svg"
+          <li id="btn_3" class="catalog_btn"><img aria-label="кнопка италия" tabindex="0" id="btn_img3" class="catalog_svg" src="img/italian.svg"
               alt="Кнопка италия"></li>
-          <li id="btn_4" class="catalog_btn"><img id="btn_img4" class="catalog_svg" src="/img/russia.svg"
+          <li id="btn_4" class="catalog_btn"><img aria-label="кнопка россия" tabindex="0" id="btn_img4" class="catalog_svg" src="img/russia.svg"
               alt="Кнопка россия"></li>
-          <li id="btn_5" class="catalog_btn"><img id="btn_img5" class="catalog_svg" src="/img/belgium.svg"
+          <li id="btn_5" class="catalog_btn"><img aria-label="кнопка бельгия" tabindex="0" id="btn_img5" class="catalog_svg" src="img/belgium.svg"
               alt="Кнопка бельгия"></li>
         </ul>
       </div>
@@ -234,13 +243,8 @@
       </div>
       <div class="catalog_info">
 
-
-
-
-
-
         <div id="person1" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Бенедетто ди Биндо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -255,7 +259,7 @@
         </div>
 
         <div id="person2" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Бергоньоне, Амброджо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -270,7 +274,7 @@
         </div>
 
         <div id="person3" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Биссоло, Франческо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -285,7 +289,7 @@
         </div>
 
         <div id="person4" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Больтраффио, Джованни</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -300,7 +304,7 @@
         </div>
 
         <div id="person5" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Бонсиньори, Франческо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -315,7 +319,7 @@
         </div>
 
         <div id="person6" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Боттичини, Рафаэлло</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -330,7 +334,7 @@
         </div>
 
         <div id="person7" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Брамантино</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -345,7 +349,7 @@
         </div>
 
         <div id="person8" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Бреа, Людовико</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -360,7 +364,7 @@
         </div>
 
         <div id="person9" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Бьяджо д’Антонио Туччи</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -375,7 +379,7 @@
         </div>
 
         <div id="person10" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Веккьетта</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -390,7 +394,7 @@
         </div>
 
         <div id="person11" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Андреа Верроккьо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -405,7 +409,7 @@
         </div>
 
         <div id="person12" class="person">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Доменико Гирландайо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -420,7 +424,7 @@
         </div>
 
         <div id="person13" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Беноццо Гоццоли</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -435,7 +439,7 @@
         </div>
 
         <div id="person14" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Граначчи, Франческо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -450,7 +454,7 @@
         </div>
 
         <div id="person15" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Грегорио ди Чекко</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -465,7 +469,7 @@
         </div>
 
         <div id="person16" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Джованни да Удине</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -480,7 +484,7 @@
         </div>
 
         <div id="person17" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Джованни ди Паоло</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -495,7 +499,7 @@
         </div>
 
         <div id="person18" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Джорджоне</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -510,7 +514,7 @@
         </div>
 
         <div id="person19" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Парентино, Бернардо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -525,7 +529,7 @@
         </div>
 
         <div id="person20" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Пезеллино</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -540,7 +544,7 @@
         </div>
 
         <div id="person21" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Пьетро Перуджино</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -555,7 +559,7 @@
         </div>
 
         <div id="person22" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Перуцци, Бальдассаре</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -570,7 +574,7 @@
         </div>
 
         <div id="person23" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Пизанелло</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -585,7 +589,7 @@
         </div>
 
         <div id="person24" class="person person_none">
-          <img class="person_img" src="/img/person/person1.jpg" alt="Доменико Гирландайо">
+          <img class="person_img" src="img/person/person1.jpg" alt="Доменико Гирландайо">
           <h3 class="person_name">Пинтуриккьо</h3>
           <div class="person_date">
             2 июня 1448 — 11 января 1494.
@@ -603,571 +607,550 @@
 
 
         <div id="accordion" class="person_accordion">
-          <h3 class="person_date_list">C 1400 по 1499 гг.</h3>
+          <h3 aria-label="кнопка деятели" tabindex="0" class="person_date_list">C 1400 по 1499 гг.</h3>
           <div class="accordion_list">
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name1" class="person_list_name">Бенедетто ди Биндо</div>
-              </div>
-              <div>
-                <div id="list_name2" class="person_list_name">Бергоньоне, Амброджо</div>
-              </div>
-              <div>
-                <div id="list_name3" class="person_list_name">Биссоло, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name4" class="person_list_name">Больтраффио, Джованни</div>
-              </div>
-              <div>
-                <div id="list_name5" class="person_list_name">Бонсиньори, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name6" class="person_list_name">Боттичини, Рафаэлло</div>
-              </div>
-              <div>
-                <div id="list_name7" class="person_list_name">Брамантино</div>
-              </div>
-              <div>
-                <div id="list_name8" class="person_list_name">Бреа, Людовико</div>
-              </div>
-              <div>
-                <div id="list_name9" class="person_list_name">Бьяджо д’Антонио Туччи</div>
-              </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name1" class="person_list_name">Бенедетто ди Биндо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name10" class="person_list_name">Веккьетта</div>
-              </div>
-              <div>
-                <div id="list_name11" class="person_list_name">Андреа Верроккьо</div>
-              </div>
-              <div>
-                <div id="list_name12" class="person_list_name">Доменико Гирландайо</div>
-              </div>
-              <div>
-                <div id="list_name13" class="person_list_name">Беноццо Гоццоли</div>
-              </div>
-              <div>
-                <div id="list_name14" class="person_list_name">Граначчи, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name15" class="person_list_name">Грегорио ди Чекко</div>
-              </div>
-              <div>
-                <div id="list_name16" class="person_list_name">Джованни да Удине</div>
-              </div>
-              <div>
-                <div id="list_name17" class="person_list_name">Джованни ди Паоло</div>
-              </div>
-              <div>
-                <div id="list_name18" class="person_list_name">Джорджоне</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name2" class="person_list_name">Бергоньоне, Амброджо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name19" class="person_list_name">Парентино, Бернардо</div>
-              </div>
-              <div>
-                <div id="list_name20" class="person_list_name">Пезеллино</div>
-              </div>
-              <div>
-                <div id="list_name21" class="person_list_name">Пьетро Перуджино</div>
-              </div>
-              <div>
-                <div id="list_name22" class="person_list_name">Перуцци, Бальдассаре</div>
-              </div>
-              <div>
-                <div id="list_name23" class="person_list_name">Пизанелло</div>
-              </div>
-              <div>
-                <div id="list_name24" class="person_list_name">Пинтуриккьо</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name3" class="person_list_name">Биссоло, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name4" class="person_list_name">Больтраффио, Джованни</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name5" class="person_list_name">Бонсиньори, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name6" class="person_list_name">Боттичини, Рафаэлло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name7" class="person_list_name">Брамантино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name8" class="person_list_name">Бреа, Людовико</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name9" class="person_list_name">Бьяджо д’Антонио Туччи</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name10" class="person_list_name">Веккьетта</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name11" class="person_list_name">Андреа Верроккьо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name12" class="person_list_name">Доменико Гирландайо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name13" class="person_list_name">Беноццо Гоццоли</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name14" class="person_list_name">Граначчи, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name15" class="person_list_name">Грегорио ди Чекко</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name16" class="person_list_name">Джованни да Удине</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name17" class="person_list_name">Джованни ди Паоло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name18" class="person_list_name">Джорджоне</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name19" class="person_list_name">Парентино, Бернардо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name20" class="person_list_name">Пезеллино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name21" class="person_list_name">Пьетро Перуджино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name22" class="person_list_name">Перуцци, Бальдассаре</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name23" class="person_list_name">Пизанелло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name24" class="person_list_name">Пинтуриккьо</div>
+            </div>
+
+          </div>
+          <h3 aria-label="кнопка деятели" tabindex="0" class="person_date_list">C 1500 по 1599 гг.</h3>
+          <div class="accordion_list">
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name25" class="person_list_name">Бенедетто ди Биндо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name26" class="person_list_name">Бергоньоне, Амброджо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name27" class="person_list_name">Биссоло, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name28" class="person_list_name">Больтраффио, Джованни</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name29" class="person_list_name">Бонсиньори, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name30" class="person_list_name">Боттичини, Рафаэлло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name31" class="person_list_name">Брамантино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name32" class="person_list_name">Бреа, Людовико</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name33" class="person_list_name">Бьяджо д’Антонио Туччи</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name34" class="person_list_name">Веккьетта</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name35" class="person_list_name">Андреа Верроккьо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name36" class="person_list_name">Доменико Гирландайо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name37" class="person_list_name">Беноццо Гоццоли</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name38" class="person_list_name">Граначчи, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name39" class="person_list_name">Грегорио ди Чекко</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name40" class="person_list_name">Джованни да Удине</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name41" class="person_list_name">Джованни ди Паоло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name42" class="person_list_name">Джорджоне</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name43" class="person_list_name">Парентино, Бернардо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name44" class="person_list_name">Пезеллино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name45" class="person_list_name">Пьетро Перуджино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name46" class="person_list_name">Перуцци, Бальдассаре</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name47" class="person_list_name">Пизанелло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name48" class="person_list_name">Пинтуриккьо</div>
+            </div>
+
+          </div>
+          <h3 aria-label="кнопка деятели" tabindex="0" class="person_date_list">C 1600 по 1699 гг.</h3>
+          <div class="accordion_list">
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name49" class="person_list_name">Бенедетто ди Биндо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name50" class="person_list_name">Бергоньоне, Амброджо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name51" class="person_list_name">Биссоло, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name52" class="person_list_name">Больтраффио, Джованни</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name53" class="person_list_name">Бонсиньори, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name54" class="person_list_name">Боттичини, Рафаэлло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name55" class="person_list_name">Брамантино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name56" class="person_list_name">Бреа, Людовико</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name57" class="person_list_name">Бьяджо д’Антонио Туччи</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name58" class="person_list_name">Веккьетта</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name59" class="person_list_name">Андреа Верроккьо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name60" class="person_list_name">Доменико Гирландайо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name61" class="person_list_name">Беноццо Гоццоли</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name62" class="person_list_name">Граначчи, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name63" class="person_list_name">Грегорио ди Чекко</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name64" class="person_list_name">Джованни да Удине</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name65" class="person_list_name">Джованни ди Паоло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name66" class="person_list_name">Джорджоне</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name67" class="person_list_name">Парентино, Бернардо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name68" class="person_list_name">Пезеллино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name69" class="person_list_name">Пьетро Перуджино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name70" class="person_list_name">Перуцци, Бальдассаре</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name71" class="person_list_name">Пизанелло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name72" class="person_list_name">Пинтуриккьо</div>
+            </div>
+
+          </div>
+          <h3 aria-label="кнопка деятели" tabindex="0" class="person_date_list">C 1700 по 1799 гг.</h3>
+          <div class="accordion_list">
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name73" class="person_list_name">Бенедетто ди Биндо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name74" class="person_list_name">Бергоньоне, Амброджо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name75" class="person_list_name">Биссоло, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name76" class="person_list_name">Больтраффио, Джованни</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name77" class="person_list_name">Бонсиньори, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name78" class="person_list_name">Боттичини, Рафаэлло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name79" class="person_list_name">Брамантино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name80" class="person_list_name">Бреа, Людовико</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name81" class="person_list_name">Бьяджо д’Антонио Туччи</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name82" class="person_list_name">Веккьетта</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name83" class="person_list_name">Андреа Верроккьо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name84" class="person_list_name">Доменико Гирландайо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name85" class="person_list_name">Беноццо Гоццоли</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name86" class="person_list_name">Граначчи, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name87" class="person_list_name">Грегорио ди Чекко</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name88" class="person_list_name">Джованни да Удине</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name89" class="person_list_name">Джованни ди Паоло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name90" class="person_list_name">Джорджоне</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name91" class="person_list_name">Парентино, Бернардо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name92" class="person_list_name">Пезеллино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name93" class="person_list_name">Пьетро Перуджино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name94" class="person_list_name">Перуцци, Бальдассаре</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name95" class="person_list_name">Пизанелло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name96" class="person_list_name">Пинтуриккьо</div>
+            </div>
+
+          </div>
+          <h3 aria-label="кнопка деятели" tabindex="0" class="person_date_list">C 1800 по 1899 гг.</h3>
+          <div class="accordion_list">
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name97" class="person_list_name">Бенедетто ди Биндо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name98" class="person_list_name">Бергоньоне, Амброджо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name99" class="person_list_name">Биссоло, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name100" class="person_list_name">Больтраффио, Джованни</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name101" class="person_list_name">Бонсиньори, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name102" class="person_list_name">Боттичини, Рафаэлло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name103" class="person_list_name">Брамантино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name104" class="person_list_name">Бреа, Людовико</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name105" class="person_list_name">Бьяджо д’Антонио Туччи</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name106" class="person_list_name">Веккьетта</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name107" class="person_list_name">Андреа Верроккьо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name108" class="person_list_name">Доменико Гирландайо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name109" class="person_list_name">Беноццо Гоццоли</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name110" class="person_list_name">Граначчи, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name111" class="person_list_name">Грегорио ди Чекко</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name112" class="person_list_name">Джованни да Удине</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name113" class="person_list_name">Джованни ди Паоло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name114" class="person_list_name">Джорджоне</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name115" class="person_list_name">Парентино, Бернардо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name116" class="person_list_name">Пезеллино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name117" class="person_list_name">Пьетро Перуджино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name118" class="person_list_name">Перуцци, Бальдассаре</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name119" class="person_list_name">Пизанелло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name120" class="person_list_name">Пинтуриккьо</div>
             </div>
           </div>
-          <h3 class="person_date_list">C 1500 по 1599 гг.</h3>
+          <h3 aria-label="кнопка деятели" tabindex="0" class="person_date_list">C 1900 по 1999 гг.</h3>
           <div class="accordion_list">
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name25" class="person_list_name">Бенедетто ди Биндо</div>
-              </div>
-              <div>
-                <div id="list_name26" class="person_list_name">Бергоньоне, Амброджо</div>
-              </div>
-              <div>
-                <div id="list_name27" class="person_list_name">Биссоло, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name28" class="person_list_name">Больтраффио, Джованни</div>
-              </div>
-              <div>
-                <div id="list_name29" class="person_list_name">Бонсиньори, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name30" class="person_list_name">Боттичини, Рафаэлло</div>
-              </div>
-              <div>
-                <div id="list_name31" class="person_list_name">Брамантино</div>
-              </div>
-              <div>
-                <div id="list_name32" class="person_list_name">Бреа, Людовико</div>
-              </div>
-              <div>
-                <div id="list_name33" class="person_list_name">Бьяджо д’Антонио Туччи</div>
-              </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name121" class="person_list_name">Бенедетто ди Биндо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name34" class="person_list_name">Веккьетта</div>
-              </div>
-              <div>
-                <div id="list_name35" class="person_list_name">Андреа Верроккьо</div>
-              </div>
-              <div>
-                <div id="list_name36" class="person_list_name">Доменико Гирландайо</div>
-              </div>
-              <div>
-                <div id="list_name37" class="person_list_name">Беноццо Гоццоли</div>
-              </div>
-              <div>
-                <div id="list_name38" class="person_list_name">Граначчи, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name39" class="person_list_name">Грегорио ди Чекко</div>
-              </div>
-              <div>
-                <div id="list_name40" class="person_list_name">Джованни да Удине</div>
-              </div>
-              <div>
-                <div id="list_name41" class="person_list_name">Джованни ди Паоло</div>
-              </div>
-              <div>
-                <div id="list_name42" class="person_list_name">Джорджоне</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name122" class="person_list_name">Бергоньоне, Амброджо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name43" class="person_list_name">Парентино, Бернардо</div>
-              </div>
-              <div>
-                <div id="list_name44" class="person_list_name">Пезеллино</div>
-              </div>
-              <div>
-                <div id="list_name45" class="person_list_name">Пьетро Перуджино</div>
-              </div>
-              <div>
-                <div id="list_name46" class="person_list_name">Перуцци, Бальдассаре</div>
-              </div>
-              <div>
-                <div id="list_name47" class="person_list_name">Пизанелло</div>
-              </div>
-              <div>
-                <div id="list_name48" class="person_list_name">Пинтуриккьо</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name123" class="person_list_name">Биссоло, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name124" class="person_list_name">Больтраффио, Джованни</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name125" class="person_list_name">Бонсиньори, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name126" class="person_list_name">Боттичини, Рафаэлло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name127" class="person_list_name">Брамантино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name128" class="person_list_name">Бреа, Людовико</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name129" class="person_list_name">Бьяджо д’Антонио Туччи</div>
+            </div>
+
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name130" class="person_list_name">Веккьетта</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name131" class="person_list_name">Андреа Верроккьо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name132" class="person_list_name">Доменико Гирландайо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name133" class="person_list_name">Беноццо Гоццоли</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name134" class="person_list_name">Граначчи, Франческо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name135" class="person_list_name">Грегорио ди Чекко</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name136" class="person_list_name">Джованни да Удине</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name137" class="person_list_name">Джованни ди Паоло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name138" class="person_list_name">Джорджоне</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name139" class="person_list_name">Парентино, Бернардо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name140" class="person_list_name">Пезеллино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name141" class="person_list_name">Пьетро Перуджино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name142" class="person_list_name">Перуцци, Бальдассаре</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name143" class="person_list_name">Пизанелло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name144" class="person_list_name">Пинтуриккьо</div>
             </div>
           </div>
-          <h3 class="person_date_list">C 1600 по 1699 гг.</h3>
+          <h3 aria-label="кнопка деятели" tabindex="0" class="person_date_list">C 2000 г.</h3>
           <div class="accordion_list">
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name49" class="person_list_name">Бенедетто ди Биндо</div>
-              </div>
-              <div>
-                <div id="list_name50" class="person_list_name">Бергоньоне, Амброджо</div>
-              </div>
-              <div>
-                <div id="list_name51" class="person_list_name">Биссоло, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name52" class="person_list_name">Больтраффио, Джованни</div>
-              </div>
-              <div>
-                <div id="list_name53" class="person_list_name">Бонсиньори, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name54" class="person_list_name">Боттичини, Рафаэлло</div>
-              </div>
-              <div>
-                <div id="list_name55" class="person_list_name">Брамантино</div>
-              </div>
-              <div>
-                <div id="list_name56" class="person_list_name">Бреа, Людовико</div>
-              </div>
-              <div>
-                <div id="list_name57" class="person_list_name">Бьяджо д’Антонио Туччи</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name145" class="person_list_name">Бенедетто ди Биндо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name58" class="person_list_name">Веккьетта</div>
-              </div>
-              <div>
-                <div id="list_name59" class="person_list_name">Андреа Верроккьо</div>
-              </div>
-              <div>
-                <div id="list_name60" class="person_list_name">Доменико Гирландайо</div>
-              </div>
-              <div>
-                <div id="list_name61" class="person_list_name">Беноццо Гоццоли</div>
-              </div>
-              <div>
-                <div id="list_name62" class="person_list_name">Граначчи, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name63" class="person_list_name">Грегорио ди Чекко</div>
-              </div>
-              <div>
-                <div id="list_name64" class="person_list_name">Джованни да Удине</div>
-              </div>
-              <div>
-                <div id="list_name65" class="person_list_name">Джованни ди Паоло</div>
-              </div>
-              <div>
-                <div id="list_name66" class="person_list_name">Джорджоне</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name146" class="person_list_name">Бергоньоне, Амброджо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name67" class="person_list_name">Парентино, Бернардо</div>
-              </div>
-              <div>
-                <div id="list_name68" class="person_list_name">Пезеллино</div>
-              </div>
-              <div>
-                <div id="list_name69" class="person_list_name">Пьетро Перуджино</div>
-              </div>
-              <div>
-                <div id="list_name70" class="person_list_name">Перуцци, Бальдассаре</div>
-              </div>
-              <div>
-                <div id="list_name71" class="person_list_name">Пизанелло</div>
-              </div>
-              <div>
-                <div id="list_name72" class="person_list_name">Пинтуриккьо</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name147" class="person_list_name">Биссоло, Франческо</div>
             </div>
-          </div>
-          <h3 class="person_date_list">C 1700 по 1799 гг.</h3>
-          <div class="accordion_list">
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name73" class="person_list_name">Бенедетто ди Биндо</div>
-              </div>
-              <div>
-                <div id="list_name74" class="person_list_name">Бергоньоне, Амброджо</div>
-              </div>
-              <div>
-                <div id="list_name75" class="person_list_name">Биссоло, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name76" class="person_list_name">Больтраффио, Джованни</div>
-              </div>
-              <div>
-                <div id="list_name77" class="person_list_name">Бонсиньори, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name78" class="person_list_name">Боттичини, Рафаэлло</div>
-              </div>
-              <div>
-                <div id="list_name79" class="person_list_name">Брамантино</div>
-              </div>
-              <div>
-                <div id="list_name80" class="person_list_name">Бреа, Людовико</div>
-              </div>
-              <div>
-                <div id="list_name81" class="person_list_name">Бьяджо д’Антонио Туччи</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name148" class="person_list_name">Больтраффио, Джованни</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name82" class="person_list_name">Веккьетта</div>
-              </div>
-              <div>
-                <div id="list_name83" class="person_list_name">Андреа Верроккьо</div>
-              </div>
-              <div>
-                <div id="list_name84" class="person_list_name">Доменико Гирландайо</div>
-              </div>
-              <div>
-                <div id="list_name85" class="person_list_name">Беноццо Гоццоли</div>
-              </div>
-              <div>
-                <div id="list_name86" class="person_list_name">Граначчи, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name87" class="person_list_name">Грегорио ди Чекко</div>
-              </div>
-              <div>
-                <div id="list_name88" class="person_list_name">Джованни да Удине</div>
-              </div>
-              <div>
-                <div id="list_name89" class="person_list_name">Джованни ди Паоло</div>
-              </div>
-              <div>
-                <div id="list_name90" class="person_list_name">Джорджоне</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name149" class="person_list_name">Бонсиньори, Франческо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name91" class="person_list_name">Парентино, Бернардо</div>
-              </div>
-              <div>
-                <div id="list_name92" class="person_list_name">Пезеллино</div>
-              </div>
-              <div>
-                <div id="list_name93" class="person_list_name">Пьетро Перуджино</div>
-              </div>
-              <div>
-                <div id="list_name94" class="person_list_name">Перуцци, Бальдассаре</div>
-              </div>
-              <div>
-                <div id="list_name95" class="person_list_name">Пизанелло</div>
-              </div>
-              <div>
-                <div id="list_name96" class="person_list_name">Пинтуриккьо</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name150" class="person_list_name">Боттичини, Рафаэлло</div>
             </div>
-          </div>
-          <h3 class="person_date_list">C 1800 по 1899 гг.</h3>
-          <div class="accordion_list">
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name97" class="person_list_name">Бенедетто ди Биндо</div>
-              </div>
-              <div>
-                <div id="list_name98" class="person_list_name">Бергоньоне, Амброджо</div>
-              </div>
-              <div>
-                <div id="list_name99" class="person_list_name">Биссоло, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name100" class="person_list_name">Больтраффио, Джованни</div>
-              </div>
-              <div>
-                <div id="list_name101" class="person_list_name">Бонсиньори, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name102" class="person_list_name">Боттичини, Рафаэлло</div>
-              </div>
-              <div>
-                <div id="list_name103" class="person_list_name">Брамантино</div>
-              </div>
-              <div>
-                <div id="list_name104" class="person_list_name">Бреа, Людовико</div>
-              </div>
-              <div>
-                <div id="list_name105" class="person_list_name">Бьяджо д’Антонио Туччи</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name151" class="person_list_name">Брамантино</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name106" class="person_list_name">Веккьетта</div>
-              </div>
-              <div>
-                <div id="list_name107" class="person_list_name">Андреа Верроккьо</div>
-              </div>
-              <div>
-                <div id="list_name108" class="person_list_name">Доменико Гирландайо</div>
-              </div>
-              <div>
-                <div id="list_name109" class="person_list_name">Беноццо Гоццоли</div>
-              </div>
-              <div>
-                <div id="list_name110" class="person_list_name">Граначчи, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name111" class="person_list_name">Грегорио ди Чекко</div>
-              </div>
-              <div>
-                <div id="list_name112" class="person_list_name">Джованни да Удине</div>
-              </div>
-              <div>
-                <div id="list_name113" class="person_list_name">Джованни ди Паоло</div>
-              </div>
-              <div>
-                <div id="list_name114" class="person_list_name">Джорджоне</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name152" class="person_list_name">Бреа, Людовико</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name115" class="person_list_name">Парентино, Бернардо</div>
-              </div>
-              <div>
-                <div id="list_name116" class="person_list_name">Пезеллино</div>
-              </div>
-              <div>
-                <div id="list_name117" class="person_list_name">Пьетро Перуджино</div>
-              </div>
-              <div>
-                <div id="list_name118" class="person_list_name">Перуцци, Бальдассаре</div>
-              </div>
-              <div>
-                <div id="list_name119" class="person_list_name">Пизанелло</div>
-              </div>
-              <div>
-                <div id="list_name120" class="person_list_name">Пинтуриккьо</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name153" class="person_list_name">Бьяджо д’Антонио Туччи</div>
             </div>
-          </div>
-          <h3 class="person_date_list">C 1900 по 1999 гг.</h3>
-          <div class="accordion_list">
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name121" class="person_list_name">Бенедетто ди Биндо</div>
-              </div>
-              <div>
-                <div id="list_name122" class="person_list_name">Бергоньоне, Амброджо</div>
-              </div>
-              <div>
-                <div id="list_name123" class="person_list_name">Биссоло, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name124" class="person_list_name">Больтраффио, Джованни</div>
-              </div>
-              <div>
-                <div id="list_name125" class="person_list_name">Бонсиньори, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name126" class="person_list_name">Боттичини, Рафаэлло</div>
-              </div>
-              <div>
-                <div id="list_name127" class="person_list_name">Брамантино</div>
-              </div>
-              <div>
-                <div id="list_name128" class="person_list_name">Бреа, Людовико</div>
-              </div>
-              <div>
-                <div id="list_name129" class="person_list_name">Бьяджо д’Антонио Туччи</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name154" class="person_list_name">Веккьетта</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name130" class="person_list_name">Веккьетта</div>
-              </div>
-              <div>
-                <div id="list_name131" class="person_list_name">Андреа Верроккьо</div>
-              </div>
-              <div>
-                <div id="list_name132" class="person_list_name">Доменико Гирландайо</div>
-              </div>
-              <div>
-                <div id="list_name133" class="person_list_name">Беноццо Гоццоли</div>
-              </div>
-              <div>
-                <div id="list_name134" class="person_list_name">Граначчи, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name135" class="person_list_name">Грегорио ди Чекко</div>
-              </div>
-              <div>
-                <div id="list_name136" class="person_list_name">Джованни да Удине</div>
-              </div>
-              <div>
-                <div id="list_name137" class="person_list_name">Джованни ди Паоло</div>
-              </div>
-              <div>
-                <div id="list_name138" class="person_list_name">Джорджоне</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name155" class="person_list_name">Андреа Верроккьо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name139" class="person_list_name">Парентино, Бернардо</div>
-              </div>
-              <div>
-                <div id="list_name140" class="person_list_name">Пезеллино</div>
-              </div>
-              <div>
-                <div id="list_name141" class="person_list_name">Пьетро Перуджино</div>
-              </div>
-              <div>
-                <div id="list_name142" class="person_list_name">Перуцци, Бальдассаре</div>
-              </div>
-              <div>
-                <div id="list_name143" class="person_list_name">Пизанелло</div>
-              </div>
-              <div>
-                <div id="list_name144" class="person_list_name">Пинтуриккьо</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name156" class="person_list_name">Доменико Гирландайо</div>
             </div>
-          </div>
-          <h3 class="person_date_list">C 2000 г.</h3>
-          <div class="accordion_list">
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name145" class="person_list_name">Бенедетто ди Биндо</div>
-              </div>
-              <div>
-                <div id="list_name146" class="person_list_name">Бергоньоне, Амброджо</div>
-              </div>
-              <div>
-                <div id="list_name147" class="person_list_name">Биссоло, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name148" class="person_list_name">Больтраффио, Джованни</div>
-              </div>
-              <div>
-                <div id="list_name149" class="person_list_name">Бонсиньори, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name150" class="person_list_name">Боттичини, Рафаэлло</div>
-              </div>
-              <div>
-                <div id="list_name151" class="person_list_name">Брамантино</div>
-              </div>
-              <div>
-                <div id="list_name152" class="person_list_name">Бреа, Людовико</div>
-              </div>
-              <div>
-                <div id="list_name153" class="person_list_name">Бьяджо д’Антонио Туччи</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name157" class="person_list_name">Беноццо Гоццоли</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name154" class="person_list_name">Веккьетта</div>
-              </div>
-              <div>
-                <div id="list_name155" class="person_list_name">Андреа Верроккьо</div>
-              </div>
-              <div>
-                <div id="list_name156" class="person_list_name">Доменико Гирландайо</div>
-              </div>
-              <div>
-                <div id="list_name157" class="person_list_name">Беноццо Гоццоли</div>
-              </div>
-              <div>
-                <div id="list_name158" class="person_list_name">Граначчи, Франческо</div>
-              </div>
-              <div>
-                <div id="list_name159" class="person_list_name">Грегорио ди Чекко</div>
-              </div>
-              <div>
-                <div id="list_name160" class="person_list_name">Джованни да Удине</div>
-              </div>
-              <div>
-                <div id="list_name161" class="person_list_name">Джованни ди Паоло</div>
-              </div>
-              <div>
-                <div id="list_name162" class="person_list_name">Джорджоне</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name158" class="person_list_name">Граначчи, Франческо</div>
             </div>
-            <div class="accordion_list_block">
-              <div>
-                <div id="list_name163" class="person_list_name">Парентино, Бернардо</div>
-              </div>
-              <div>
-                <div id="list_name164" class="person_list_name">Пезеллино</div>
-              </div>
-              <div>
-                <div id="list_name165" class="person_list_name">Пьетро Перуджино</div>
-              </div>
-              <div>
-                <div id="list_name166" class="person_list_name">Перуцци, Бальдассаре</div>
-              </div>
-              <div>
-                <div id="list_name167" class="person_list_name">Пизанелло</div>
-              </div>
-              <div>
-                <div id="list_name168" class="person_list_name">Пинтуриккьо</div>
-              </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name159" class="person_list_name">Грегорио ди Чекко</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name160" class="person_list_name">Джованни да Удине</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name161" class="person_list_name">Джованни ди Паоло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name162" class="person_list_name">Джорджоне</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name163" class="person_list_name">Парентино, Бернардо</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name164" class="person_list_name">Пезеллино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name165" class="person_list_name">Пьетро Перуджино</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name166" class="person_list_name">Перуцци, Бальдассаре</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name167" class="person_list_name">Пизанелло</div>
+            </div>
+            <div class="accordion_item">
+              <div tabindex="0" id="list_name168" class="person_list_name">Пинтуриккьо</div>
             </div>
           </div>
         </div>
@@ -1177,16 +1160,16 @@
 
   <section id="events" class="events">
     <div class="container">
-      <h2 class="style_2">События</h2>
-      <div class="swiper-container11">
-        <div class="swiper-wrapper11 events_block">
-          <div class="swiper-slide11 blockelem">
-            <img src="/img/Rectangle101.jpg" alt="Узоры" class="blockelem_img">
+      <h2 class="style_2 events_head">События</h2>
+      <div class="events_swiper-container swiper-container">
+        <div class="events_swiper-wrapper swiper-wrapper events_block">
+          <div class="events_swiper-slide swiper-slide blockelem">
+            <img src="img/Rectangle101.jpg" alt="Узоры" class="blockelem_img">
             <div class="blockelem_info">
               <div class="blockelem_1">
                 <div class="blockelem_location">Музей им. Щусева</div>
                 <div class="blockelem_date">с 20 марта по 30 апреля</div>
-                <h3 class="blockelem_h3">Книжная гравюра в живом восприятии</h3>
+                <h3 class="blockelem_title">Книжная гравюра в живом восприятии</h3>
                 <p class="blockelem_text">Один из ведущих флорентийских художников Кватроченто, основатель
                   художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
                   мастерской, где юный Микеланджело.</p>
@@ -1196,13 +1179,13 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide11 blockelem">
-            <img src="/img/Rectangle102.jpg" alt="Фигуры" class="blockelem_img">
+          <div class="events_swiper-slide swiper-slide blockelem">
+            <img src="img/Rectangle102.jpg" alt="Фигуры" class="blockelem_img">
             <div class="blockelem_info">
               <div class="blockelem_1">
                 <div class="blockelem_location">ММОМА</div>
                 <div class="blockelem_date">24 марта 19:00</div>
-                <h3 class="blockelem_h3">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <h3 class="blockelem_title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
                 <p class="blockelem_text">Высокий уровень вовлечения представителей целевой аудитории является четким
                   доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет
                   собой интересный эксперимент проверки новых принципов формирования...</p>
@@ -1212,13 +1195,13 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide11 blockelem">
-            <img src="/img/Rectangle103.jpg" alt="Выставка" class="blockelem_img">
+          <div id="elem_none4" class="events_swiper-slide swiper-slide blockelem">
+            <img src="img/Rectangle103.jpg" alt="Выставка" class="blockelem_img">
             <div class="blockelem_info">
               <div class="blockelem_1">
                 <div class="blockelem_location">Еврейский музей</div>
                 <div class="blockelem_date">с 31 марта по 21 апреля</div>
-                <h3 class="blockelem_h3">Выставка «Формация 2020»</h3>
+                <h3 class="blockelem_title">Выставка «Формация 2020»</h3>
                 <p class="blockelem_text">Идейные соображения высшего порядка, а также современная методология
                   разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное
                   планирование играет определяющее значение для новых принципов формирования материально-технической и
@@ -1230,13 +1213,13 @@
             </div>
           </div>
 
-          <div id="elem_none1" class="swiper-slide11 blockelem blockelem_none">
-            <img src="/img/Rectangle104.jpg" alt="Молодое искусство" class="blockelem_img">
+          <div id="elem_none1" class="events_swiper-slide swiper-slide blockelem blockelem_none">
+            <img src="img/Rectangle104.jpg" alt="Молодое искусство" class="blockelem_img">
             <div class="blockelem_info">
               <div class="blockelem_1">
                 <div class="blockelem_location">Третьяковка на Крымском валу</div>
                 <div class="blockelem_date">с 30 марта по 30 апреля</div>
-                <h3 class="blockelem_h3">XXIV Международная биеннале молодого искусства</h3>
+                <h3 class="blockelem_title">XXIV Международная биеннале молодого искусства</h3>
                 <p class="blockelem_text">Внезапно, реплицированные с зарубежных источников, современные исследования
                   представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть
                   рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
@@ -1247,13 +1230,13 @@
             </div>
           </div>
 
-          <div id="elem_none2" class="swiper-slide11 blockelem blockelem_none">
-            <img src="/img/Rectangle105.jpg" alt="Метафора серебра" class="blockelem_img">
+          <div id="elem_none2" class="events_swiper-slide swiper-slide blockelem blockelem_none">
+            <img src="img/Rectangle105.jpg" alt="Метафора серебра" class="blockelem_img">
             <div class="blockelem_info">
               <div class="blockelem_1">
                 <div class="blockelem_location">ММАМ</div>
                 <div class="blockelem_date">с 8 апреля по 20 мая</div>
-                <h3 class="blockelem_h3">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <h3 class="blockelem_title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
                 <p class="blockelem_text">Один из ведущих флорентийских художников Кватроченто, основатель
                   художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
                   мастерской, где юный Микеланджело.</p>
@@ -1264,13 +1247,13 @@
             </div>
           </div>
 
-          <div id="elem_none3" class="swiper-slide11 blockelem blockelem_none">
-            <img src="/img/Rectangle105.jpg" alt="Метафора серебра" class="blockelem_img">
+          <div id="elem_none3" class="events_swiper-slide swiper-slide blockelem blockelem_none">
+            <img src="img/Rectangle105.jpg" alt="Метафора серебра" class="blockelem_img">
             <div class="blockelem_info">
               <div class="blockelem_1">
                 <div class="blockelem_location">ММАМ</div>
                 <div class="blockelem_date">с 8 апреля по 20 мая</div>
-                <h3 class="blockelem_h3">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <h3 class="blockelem_title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
                 <p class="blockelem_text">Один из ведущих флорентийских художников Кватроченто, основатель
                   художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
                   мастерской, где юный Микеланджело.</p>
@@ -1282,7 +1265,7 @@
           </div>
 
         </div>
-        <div class="swiper-pagination11"></div>
+        <div class="swiper-pagination events_swiper-pagination"></div>
       </div>
       <button id="events_btn1" class="events_btn">Все события</button>
     </div>
@@ -1291,87 +1274,87 @@
   <section id="public" class="public">
     <div class="container public_cont">
       <div class="public_container1">
-        <h2 class="style_2 public_h2">Издания</h2>
+        <h2 class="style_2 public_head">Издания</h2>
         <div class="public_check">
-          <h4 class="public_text">Категории</h4>
+          <h4 id="public_title" class="public_text public_title">Категории</h4>
           <form class="block11">
             <label class="label_check" for="check1">
               <input type="checkbox" name="check1" id="check1">
-              <span>Бестселлеры</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Бестселлеры</span>
             </label>
             <label class="label_check" for="check2">
               <input type="checkbox" name="check2" id="check2">
-              <span>Искусство</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Искусство</span>
             </label>
             <label class="label_check" for="check3">
               <input type="checkbox" name="check3" id="check3">
-              <span>Архитектура</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Архитектура</span>
             </label>
             <label class="label_check" for="check4">
               <input type="checkbox" name="check4" id="check4">
-              <span>Дизайн</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Дизайн</span>
             </label>
             <label class="label_check" for="check5">
               <input type="checkbox" name="check5" id="check5">
-              <span>Мода</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Мода</span>
             </label>
             <label class="label_check" for="check6">
               <input type="checkbox" name="check6" id="check6">
-              <span>Детям</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Детям</span>
             </label>
             <label class="label_check" for="check7">
               <input type="checkbox" name="check7" id="check7">
-              <span>Художественная литература</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Художественная литература</span>
             </label>
             <label class="label_check" for="check8">
               <input type="checkbox" name="check8" id="check8">
-              <span>Публицистика</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Публицистика</span>
             </label>
             <label class="label_check" for="check9">
               <input type="checkbox" name="check9" id="check9">
-              <span>Путеводители</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Путеводители</span>
             </label>
             <label class="label_check" for="check10">
               <input type="checkbox" name="check10" id="check10">
-              <span>Философия</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Философия</span>
             </label>
             <label class="label_check" for="check11">
               <input type="checkbox" name="check11" id="check11">
-              <span>Учебная литература</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Учебная литература</span>
             </label>
             <label class="label_check" for="check12">
               <input type="checkbox" name="check12" id="check12">
-              <span>Журналы и газеты</span>
+              <span aria-label="отметить пункт" tabindex="0" class="check">Журналы и газеты</span>
             </label>
           </form>
         </div>
-        <h4 class="public_text">
+        <h4 class="public_text public_text2">
           Цена
         </h4>
         <form class="public_price">
-          <label class="label_price1">От<input class="price_input1" type="tel" placeholder="50"
+          <label class="label_price1">От<input aria-label="стоимость от" tabindex="0" class="price_input1" type="tel" placeholder="50"
               name="от">до</label>
-          <label class="label_price2"><input class="price_input2" type="tel" placeholder="25000"
+          <label class="label_price2"><input aria-label="стоимость до" tabindex="0" class="price_input2" type="tel" placeholder="25 000"
               name="до">рублей</label>
         </form>
       </div>
       <div class="public_container2">
         <div class="public_swiper-container swiper-container">
           <div class="swiper-wrapper swiper-wrapper-public">
-            <div class="swiper-slide swiper-slide-public gallery_img">
+            <div class="swiper-slide swiper-slide-public">
               <div class="slide-image">
                 <img src="img/slide/Rectangle111.jpg" alt="Искусство цветом">
               </div>
               <div class="slide_text">
                 <div class="slide_text_left">
-                  <div class="slide_name">Искусстово цвета</div>
+                  <div class="slide_name">Искусство цвета</div>
                   <div class="slide_autor">Иттен, Иоханнес</div>
                 </div>
                 <div class="slide_text_right">620 руб</div>
               </div>
               <a href="#" class="public_btn">Заказать</a>
             </div>
-            <div class="swiper-slide swiper-slide-public gallery_img">
+            <div class="swiper-slide swiper-slide-public">
               <div class="slide-image">
                 <img src="img/slide/Rectangle112.jpg" alt="Типографика">
               </div>
@@ -1384,7 +1367,7 @@
               </div>
               <a href="#" class="public_btn">Заказать</a>
             </div>
-            <div class="swiper-slide swiper-slide-public gallery_img">
+            <div class="swiper-slide swiper-slide-public">
               <div class="slide-image">
                 <img src="img/slide/Rectangle113.jpg" alt="Книга про буквы">
               </div>
@@ -1397,7 +1380,7 @@
               </div>
               <a href="#" class="public_btn">Заказать</a>
             </div>
-            <div class="swiper-slide swiper-slide-public gallery_img">
+            <div class="swiper-slide swiper-slide-public">
               <div class="slide-image">
                 <img src="img/slide/Rectangle114.jpg" alt="Николай Ильин">
               </div>
@@ -1410,7 +1393,7 @@
               </div>
               <a href="#" class="public_btn">Заказать</a>
             </div>
-            <div class="swiper-slide swiper-slide-public gallery_img">
+            <div class="swiper-slide swiper-slide-public">
               <div class="slide-image">
                 <img src="img/slide/Rectangle115.jpg" alt="Модульные системы в графическом дизайне">
               </div>
@@ -1423,7 +1406,7 @@
               </div>
               <a href="#" class="public_btn">Заказать</a>
             </div>
-            <div class="swiper-slide swiper-slide-public gallery_img">
+            <div class="swiper-slide swiper-slide-public">
               <div class="slide-image">
                 <img src="img/slide/Rectangle116.jpg" alt="Эволюция графических стилей">
               </div>
@@ -1436,7 +1419,7 @@
               </div>
               <a href="#" class="public_btn">Заказать</a>
             </div>
-            <div class="swiper-slide swiper-slide-public gallery_img">
+            <div class="swiper-slide swiper-slide-public">
               <div class="slide-image">
                 <img src="img/slide/Rectangle117.jpg" alt="Искусство и визуальное восприятие">
               </div>
@@ -1451,8 +1434,8 @@
             </div>
           </div>
           <div class="start_swiper-pagination swiper-pagination swiper-pagination-public"></div>
-          <div class="start_swiper-prev swiper-prev prev-condition swiper-prev-public"></div>
-          <div class="start_swiper-next swiper-next next-condition swiper-next-public"></div>
+          <div aria-label="кнопка предыдущие издания" tabindex="0" class="start_swiper-prev swiper-prev prev-condition swiper-prev-public"></div>
+          <div aria-label="кнопка следующие издания" tabindex="0" class="start_swiper-next swiper-next next-condition swiper-next-public"></div>
         </div>
       </div>
 
@@ -1461,7 +1444,7 @@
 
   <section id="project" class="project">
     <div class="container">
-      <h2 class="style_2 project_h2">Проекты</h2>
+      <h2 class="style_2 project_head">Проекты</h2>
       <p class="project_text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
         деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые
         государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их
@@ -1475,7 +1458,7 @@
         представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны
         быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project_link"
           href="https://blanchard-art.ru/projects/about">blanchard-art.ru/projects/about</a></p>
-      <h3 class="project_h3">Партнёры проектов:</h3>
+      <h3 class="project_title">Партнёры проектов:</h3>
       <div class="project_swiper swiper-container">
         <div class="swiper-wrapper project_swiper-wrapper">
           <div class="swiper-slide project_swiper-slide project_slide1"></div>
@@ -1488,8 +1471,8 @@
           <div class="swiper-slide project_swiper-slide project_slide8"></div>
           <div class="swiper-slide project_swiper-slide project_slide9"></div>
         </div>
-        <div class="project_swiper-prev swiper-prev prev-condition"></div>
-        <div class="project_swiper-next swiper-next next-condition"></div>
+        <div aria-label="кнопка предыдущие партнеры " tabindex="0" class="project_swiper-prev swiper-prev prev-condition"></div>
+        <div aria-label="кнопка следующие партнеры " tabindex="0" class="project_swiper-next swiper-next next-condition"></div>
         <div class="swiper_left"></div>
         <div class="swiper_right"></div>
 
@@ -1499,33 +1482,24 @@
 
   <section id="contacts" class="contacts">
     <div class="container">
-      <h2 class="style_2">Контакты</h2>
+      <h2 class="style_2 contacts_head">Контакты</h2>
     </div>
     <div class="contacts_block">
       <div class="contacts_block1">
-        <h3 class="contacts_h3 contacts_h3-1">Шоурум №4</h3>
+        <h3 class="contacts_title contacts_title-1">Шоурум №4</h3>
         <address class="contacts_adress">Леонтьевский переулок, дом 5, строение 1</address>
-        <h3 class="contacts_h3">Заказать обратный звонок</h3>
+        <h3 class="contacts_title">Заказать обратный звонок</h3>
         <form class="contacts_form">
-
-          <input name="name" type="text" class="contacts_input" placeholder="Имя*" data-validate-field="name" id="name">
-
-
-          <input name="tel" type="tel" class="contacts_input" placeholder="Телефон*" data-validate-field="tel"
-            data-validate-rules="phone" id="tel">
-
-
-          <!-- <input id="name" name="name" class="contacts_input" type="text" placeholder="Имя*" data-validate-field="name">
-          <input id="tel" name="tel" class="contacts_input" type="tel" placeholder="Телефон*"
-            data-validate-field="phone"> -->
-
-
+          <input aria-label="введите ваше имя" tabindex="0" name="name" type="text" class="contacts_input" placeholder="Имя*"
+            data-validate-field="name" id="name">
+          <input aria-label="введите ваш номер телефона" tabindex="0" name="tel" type="tel" class="contacts_input" placeholder="Телефон*"
+            data-validate-field="tel" data-validate-rules="phone" id="tel">
           <button class="contacts_btn">Заказать</button>
         </form>
-        <h3 class="contacts_h3">Связаться в один клик</h3>
+        <h3 class="contacts_title contacts_title-3">Связаться в один клик</h3>
         <div class="contacts_links">
-          <a class="contacts_link whatsapp" href="#"></a>
-          <a class="contacts_link telegram" href="#"></a>
+          <a aria-label="мессенджер ватсап" class="contacts_link whatsapp" href="#"></a>
+          <a aria-label="мессенджер телеграм" class="contacts_link telegram" href="#"></a>
         </div>
       </div>
       <div id="myMap" class="contacts_block2"></div>
@@ -1533,26 +1507,26 @@
   </section>
   <footer class="footer">
     <div class="container footer_container">
-      <img src="/img/Лого.svg" alt="Blanchard художественная галерея" class="header_logo">
+      <img src="img/Лого.svg" alt="Blanchard художественная галерея" class="header_logo">
       <ul class="footer_social">
-        <li class="footer_link"><a class="footer_vk" href=""></a></li>
-        <li class="footer_link"><a class="footer_inst" href=""></a></li>
-        <li class="footer_link"><a class="footer_face" href=""></a></li>
+        <li class="footer_link"><a aria-label="социальная сеть вконтакте" class="footer_vk" href=""></a></li>
+        <li class="footer_link"><a aria-label="социальная сеть инстаграмм" class="footer_inst" href=""></a></li>
+        <li class="footer_link"><a aria-label="социальная сеть фейсбук" class="footer_face" href=""></a></li>
       </ul>
     </div>
   </footer>
 
-  <script src="/js/simplebar.min.js"></script>
-  <script src="/js/jquery.js"></script>
-  <script src="/js/jquery-ui.js"></script>
-  <script src="/js/swiper-bundle.min.js"></script>
-  <script src="/js/choices.min.js"></script>
-  <script src="/js/just-validate.min.js"></script>
-  <script src="/js/inputmask.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- <script src="/js/choices.min.js"></script> -->
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
 
-  <script src="/js/my3.js"></script>
-  <script src="/js/my2.js"></script>
-  <script src="/js/my1.js"></script>
+  <script src="js/my3.js"></script>
+  <script src="js/my2.js"></script>
+  <script src="js/my1.js"></script>
 
 </body>
 
