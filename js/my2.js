@@ -1,11 +1,9 @@
 ymaps.ready(init);
 function init() {
-    // Создание карты.
     var myMap = new ymaps.Map("myMap", {
         center: [55.758016, 37.600259],
         zoom: 14
     });
-
     var myPlacemark = new ymaps.Placemark([55.758016, 37.600259], {}, {
         type: "Point",
         iconLayout: 'default#image',
