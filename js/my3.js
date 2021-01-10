@@ -12,9 +12,21 @@ new JustValidate('.contacts__form', {
         tel: {
             required: true,
             function: (name, value) => {
-                const phone = selector.inputmask.unmaskedvalue()                
+                const phone = selector.inputmask.unmaskedvalue()
                 return Number(phone) && phone.length === 10
             }
-        }       
+        }
     }
 });
+const defaultSelect = () => {
+    const element = document.querySelector('.js-choice');
+    const choices = new Choices(element, {
+        searchEnabled: false,
+        itemSelectText: '',
+        position: false,
+    });
+
+
+};
+
+defaultSelect();

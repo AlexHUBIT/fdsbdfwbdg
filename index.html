@@ -7,6 +7,7 @@
   <title>Курсовая работа</title>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <link rel="stylesheet" href="css/simplebar.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/customscroll.css">
@@ -17,118 +18,128 @@
 <body>
   <header class="header">
     <div class="header__top">
-      <button id="header__burger" class="header__burger" aria-label="Меню"></button>
-      <img class="header__logo header-logo" src="img/Лого.svg" alt="Blanchard художественная галерея">
-      <nav id="header__nav" class="header__nav">
-        <ul class="header__list header-list">
-          <li class="header-list__item"><a class="header-list__link focus hover active" href="#about">О нас</a></li>
-          <li class="header-list__item"><a class="header-list__link focus hover active" href="#gallery">Галерея</a></li>
-          <li class="header-list__item"><a class="header-list__link focus hover active" href="#catalog">Каталог</a></li>
-          <li class="header-list__item"><a class="header-list__link focus hover active" href="#events">События</a></li>
-          <li class="header-list__item"><a class="header-list__link focus hover active" href="#public">Издания</a></li>
-          <li class="header-list__item"><a class="header-list__link focus hover active" href="#project">Проекты</a></li>
-          <li class="header-list__item"><a class="header-list__link focus hover active" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a id="header__link" class="header__link focus hover" href="#">Войти</a>
+      <div class="container header-top__container">
+        <button id="header__burger" class="header__burger" aria-label="Меню"></button>
+        <img class="header__logo header-logo" src="img/Лого.svg" alt="Blanchard художественная галерея">
+        <nav id="header__nav" class="header__nav">
+          <ul class="header__list header-list">
+            <li class="header-list__item"><a class="header-list__link focus hover active" href="#about">О нас</a></li>
+            <li class="header-list__item"><a class="header-list__link focus hover active" href="#gallery">Галерея</a>
+            </li>
+            <li class="header-list__item"><a class="header-list__link focus hover active" href="#catalog">Каталог</a>
+            </li>
+            <li class="header-list__item"><a class="header-list__link focus hover active" href="#events">События</a>
+            </li>
+            <li class="header-list__item"><a class="header-list__link focus hover active" href="#public">Издания</a>
+            </li>
+            <li class="header-list__item"><a class="header-list__link focus hover active" href="#project">Проекты</a>
+            </li>
+            <li class="header-list__item"><a class="header-list__link focus hover active" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a id="header__link" class="header__link focus hover" href="#">Войти</a>
+
+      </div>
     </div>
     <div class="header__bot">
-      <ul class="header__catalog header-catalog">
-        <li class="header-catalog__item">
-          <button aria-label="категория искусства Реализм" id="header-catalog__btn1"
-            class="header-catalog__btn hover active focus">Реализм</button>
-          <ul id="header-catalog__list1" class="header-catalog__list" data-simplebar>
-            <li class="header-catalog__option" tabindex="0">Вариант1</li>
-            <li class="header-catalog__option" tabindex="0">Вариант2</li>
-            <li class="header-catalog__option" tabindex="0">Вариант3</li>
-            <li class="header-catalog__option" tabindex="0">Вариант4</li>
-            <li class="header-catalog__option" tabindex="0">Вариант5</li>
-            <li class="header-catalog__option" tabindex="0">Вариант6</li>
-            <li class="header-catalog__option" tabindex="0">Вариант7</li>
-            <li class="header-catalog__option" tabindex="0">Вариант8</li>
-            <li class="header-catalog__option" tabindex="0">Вариант9</li>
-            <li class="header-catalog__option" tabindex="0">Вариант10</li>
-          </ul>
-        </li>
-        <li class="header-catalog__item">
-          <button aria-label="категория искусства Импрессионизм" id="header-catalog__btn2"
-            class="header-catalog__btn hover active focus">Импрессионизм</button>
-          <ul id="header-catalog__list2" class="header-catalog__list" data-simplebar>
-            <li class="header-catalog__option" tabindex="0">Вариант1</li>
-            <li class="header-catalog__option" tabindex="0">Вариант2</li>
-            <li class="header-catalog__option" tabindex="0">Вариант3</li>
-            <li class="header-catalog__option" tabindex="0">Вариант4</li>
-            <li class="header-catalog__option" tabindex="0">Вариант5</li>
-            <li class="header-catalog__option" tabindex="0">Вариант6</li>
-            <li class="header-catalog__option" tabindex="0">Вариант7</li>
-            <li class="header-catalog__option" tabindex="0">Вариант8</li>
-            <li class="header-catalog__option" tabindex="0">Вариант9</li>
-            <li class="header-catalog__option" tabindex="0">Вариант10</li>
-          </ul>
-        </li>
-        <li class="header-catalog__item">
-          <button aria-label="категория искусства Постимпрессионизм" id="header-catalog__btn3"
-            class="header-catalog__btn hover active focus">Постимпрессионизм</button>
-          <ul id="header-catalog__list3" class="header-catalog__list" data-simplebar>
-            <li class="header-catalog__option" tabindex="0">Вариант1</li>
-            <li class="header-catalog__option" tabindex="0">Вариант2</li>
-            <li class="header-catalog__option" tabindex="0">Вариант3</li>
-            <li class="header-catalog__option" tabindex="0">Вариант4</li>
-            <li class="header-catalog__option" tabindex="0">Вариант5</li>
-            <li class="header-catalog__option" tabindex="0">Вариант6</li>
-            <li class="header-catalog__option" tabindex="0">Вариант7</li>
-            <li class="header-catalog__option" tabindex="0">Вариант8</li>
-            <li class="header-catalog__option" tabindex="0">Вариант9</li>
-            <li class="header-catalog__option" tabindex="0">Вариант10</li>
-          </ul>
-        </li>
-        <li class="header-catalog__item">
-          <button aria-label="категория искусства авангард" id="header-catalog__btn4"
-            class="header-catalog__btn hover active focus">Авангард</button>
-          <ul id="header-catalog__list4" class="header-catalog__list" data-simplebar>
-            <li class="header-catalog__option" tabindex="0">Вариант1</li>
-            <li class="header-catalog__option" tabindex="0">Вариант2</li>
-            <li class="header-catalog__option" tabindex="0">Вариант3</li>
-            <li class="header-catalog__option" tabindex="0">Вариант4</li>
-            <li class="header-catalog__option" tabindex="0">Вариант5</li>
-            <li class="header-catalog__option" tabindex="0">Вариант6</li>
-            <li class="header-catalog__option" tabindex="0">Вариант7</li>
-            <li class="header-catalog__option" tabindex="0">Вариант8</li>
-            <li class="header-catalog__option" tabindex="0">Вариант9</li>
-            <li class="header-catalog__option" tabindex="0">Вариант10</li>
-          </ul>
-        </li>
-        <li class="header-catalog__item">
-          <button aria-label="категория искусства футуризм" id="header-catalog__btn5"
-            class="header-catalog__btn hover active focus">Футуризм</button>
-          <ul id="header-catalog__list5" class="header-catalog__list" data-simplebar>
-            <li class="header-catalog__option" tabindex="0">Вариант1</li>
-            <li class="header-catalog__option" tabindex="0">Вариант2</li>
-            <li class="header-catalog__option" tabindex="0">Вариант3</li>
-            <li class="header-catalog__option" tabindex="0">Вариант4</li>
-            <li class="header-catalog__option" tabindex="0">Вариант5</li>
-            <li class="header-catalog__option" tabindex="0">Вариант6</li>
-            <li class="header-catalog__option" tabindex="0">Вариант7</li>
-            <li class="header-catalog__option" tabindex="0">Вариант8</li>
-            <li class="header-catalog__option" tabindex="0">Вариант9</li>
-            <li class="header-catalog__option" tabindex="0">Вариант10</li>
-          </ul>
-        </li>
-      </ul>
-      <form id="header__form" class="header__form header-form">
-        <label class="header-form__label">
-          <input class="header-form__input" type="text" name="search" placeholder="Поиск по сайту">
-        </label>
-      </form>
-      <button id="header__search" class="header__search" aria-label="Поиск"></button>
+      <div class="container header-bot__container">
+        <ul class="header__catalog header-catalog">
+          <li class="header-catalog__item">
+            <button aria-label="категория искусства Реализм" id="header-catalog__btn1"
+              class="header-catalog__btn hover active focus">Реализм</button>
+            <ul id="header-catalog__list1" class="header-catalog__list" data-simplebar>
+              <li class="header-catalog__option" tabindex="0">Вариант1</li>
+              <li class="header-catalog__option" tabindex="0">Вариант2</li>
+              <li class="header-catalog__option" tabindex="0">Вариант3</li>
+              <li class="header-catalog__option" tabindex="0">Вариант4</li>
+              <li class="header-catalog__option" tabindex="0">Вариант5</li>
+              <li class="header-catalog__option" tabindex="0">Вариант6</li>
+              <li class="header-catalog__option" tabindex="0">Вариант7</li>
+              <li class="header-catalog__option" tabindex="0">Вариант8</li>
+              <li class="header-catalog__option" tabindex="0">Вариант9</li>
+              <li class="header-catalog__option" tabindex="0">Вариант10</li>
+            </ul>
+          </li>
+          <li class="header-catalog__item">
+            <button aria-label="категория искусства Импрессионизм" id="header-catalog__btn2"
+              class="header-catalog__btn hover active focus">Импрессионизм</button>
+            <ul id="header-catalog__list2" class="header-catalog__list" data-simplebar>
+              <li class="header-catalog__option" tabindex="0">Вариант1</li>
+              <li class="header-catalog__option" tabindex="0">Вариант2</li>
+              <li class="header-catalog__option" tabindex="0">Вариант3</li>
+              <li class="header-catalog__option" tabindex="0">Вариант4</li>
+              <li class="header-catalog__option" tabindex="0">Вариант5</li>
+              <li class="header-catalog__option" tabindex="0">Вариант6</li>
+              <li class="header-catalog__option" tabindex="0">Вариант7</li>
+              <li class="header-catalog__option" tabindex="0">Вариант8</li>
+              <li class="header-catalog__option" tabindex="0">Вариант9</li>
+              <li class="header-catalog__option" tabindex="0">Вариант10</li>
+            </ul>
+          </li>
+          <li class="header-catalog__item">
+            <button aria-label="категория искусства Постимпрессионизм" id="header-catalog__btn3"
+              class="header-catalog__btn hover active focus">Постимпрессионизм</button>
+            <ul id="header-catalog__list3" class="header-catalog__list" data-simplebar>
+              <li class="header-catalog__option" tabindex="0">Вариант1</li>
+              <li class="header-catalog__option" tabindex="0">Вариант2</li>
+              <li class="header-catalog__option" tabindex="0">Вариант3</li>
+              <li class="header-catalog__option" tabindex="0">Вариант4</li>
+              <li class="header-catalog__option" tabindex="0">Вариант5</li>
+              <li class="header-catalog__option" tabindex="0">Вариант6</li>
+              <li class="header-catalog__option" tabindex="0">Вариант7</li>
+              <li class="header-catalog__option" tabindex="0">Вариант8</li>
+              <li class="header-catalog__option" tabindex="0">Вариант9</li>
+              <li class="header-catalog__option" tabindex="0">Вариант10</li>
+            </ul>
+          </li>
+          <li class="header-catalog__item">
+            <button aria-label="категория искусства авангард" id="header-catalog__btn4"
+              class="header-catalog__btn hover active focus">Авангард</button>
+            <ul id="header-catalog__list4" class="header-catalog__list" data-simplebar>
+              <li class="header-catalog__option" tabindex="0">Вариант1</li>
+              <li class="header-catalog__option" tabindex="0">Вариант2</li>
+              <li class="header-catalog__option" tabindex="0">Вариант3</li>
+              <li class="header-catalog__option" tabindex="0">Вариант4</li>
+              <li class="header-catalog__option" tabindex="0">Вариант5</li>
+              <li class="header-catalog__option" tabindex="0">Вариант6</li>
+              <li class="header-catalog__option" tabindex="0">Вариант7</li>
+              <li class="header-catalog__option" tabindex="0">Вариант8</li>
+              <li class="header-catalog__option" tabindex="0">Вариант9</li>
+              <li class="header-catalog__option" tabindex="0">Вариант10</li>
+            </ul>
+          </li>
+          <li class="header-catalog__item">
+            <button aria-label="категория искусства футуризм" id="header-catalog__btn5"
+              class="header-catalog__btn hover active focus">Футуризм</button>
+            <ul id="header-catalog__list5" class="header-catalog__list" data-simplebar>
+              <li class="header-catalog__option" tabindex="0">Вариант1</li>
+              <li class="header-catalog__option" tabindex="0">Вариант2</li>
+              <li class="header-catalog__option" tabindex="0">Вариант3</li>
+              <li class="header-catalog__option" tabindex="0">Вариант4</li>
+              <li class="header-catalog__option" tabindex="0">Вариант5</li>
+              <li class="header-catalog__option" tabindex="0">Вариант6</li>
+              <li class="header-catalog__option" tabindex="0">Вариант7</li>
+              <li class="header-catalog__option" tabindex="0">Вариант8</li>
+              <li class="header-catalog__option" tabindex="0">Вариант9</li>
+              <li class="header-catalog__option" tabindex="0">Вариант10</li>
+            </ul>
+          </li>
+        </ul>
+        <form id="header__form" class="header__form header-form">
+          <label class="header-form__label">
+            <input class="header-form__input" type="text" name="search" placeholder="Поиск по сайту">
+          </label>
+        </form>
+        <button id="header__search" class="header__search" aria-label="Поиск"></button>
+      </div>
     </div>
 
   </header>
 
   <section id="hero" class="hero">
     <div class="container">
-      <h2 class="hero__head">
+      <h2 class="hero__head head-style">
         Прикоснитесь к прекрасному
       </h2>
       <p class="hero__text">
@@ -159,11 +170,13 @@
     <div class="container container__gallery">
       <div class="gallery__block">
         <div class="gallery__top">
-          <h2 class="gallery__head head-style">Галерея</h2>
+          <h1 class="gallery__head head-style">Галерея</h1>
           <div class="gallery__text">Фильтровать по:</div>
-          <div class="gallery__item1">Автор</div>
-          <div class="gallery__item2">Направление</div>
-          <div class="gallery__item3">Техника</div>
+          <select name="Фильтр" class="js-choice">
+            <option value="#">Автор</option>
+            <option value="#">Направление</option>
+            <option value="#">Техника</option>
+          </select>
         </div>
 
         <div class="gallery__description gallery__description1">
@@ -204,7 +217,7 @@
           <div class="swiper-slide gallery_img"><img src="img/slide/Rectangle29.jpg" alt="Картина маслом"></div>
           <div class="swiper-slide gallery_img"><img src="img/slide/Rectangle30.jpg" alt="Картина маслом"></div>
         </div>
-        <div class="start__swiper-pagination"></div>
+        <div class="start__swiper-pagination swiper-pagination"></div>
         <div tabindex="0" class="start__swiper-prev prev-condition"></div>
         <div tabindex="0" class="start__swiper-next next-condition"></div>
       </div>
@@ -803,7 +816,6 @@
               <div tabindex="0" id="catalog-accordion__name57" class="catalog-accordion__name">Бьяджо д’Антонио Туччи
               </div>
             </div>
-
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name58" class="catalog-accordion__name">Веккьетта</div>
             </div>
@@ -831,7 +843,6 @@
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name66" class="catalog-accordion__name">Джорджоне</div>
             </div>
-
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name67" class="catalog-accordion__name">Парентино, Бернардо</div>
             </div>
@@ -851,7 +862,6 @@
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name72" class="catalog-accordion__name">Пинтуриккьо</div>
             </div>
-
           </div>
           <h3 tabindex="0" class="catalog-accordion__date">C 1700 по 1799 гг.</h3>
           <div class="catalog-accordion__list">
@@ -887,7 +897,6 @@
               <div tabindex="0" id="catalog-accordion__name81" class="catalog-accordion__name">Бьяджо д’Антонио Туччи
               </div>
             </div>
-
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name82" class="catalog-accordion__name">Веккьетта</div>
             </div>
@@ -915,7 +924,6 @@
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name90" class="catalog-accordion__name">Джорджоне</div>
             </div>
-
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name91" class="catalog-accordion__name">Парентино, Бернардо</div>
             </div>
@@ -935,7 +943,6 @@
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name96" class="catalog-accordion__name">Пинтуриккьо</div>
             </div>
-
           </div>
           <h3 tabindex="0" class="catalog-accordion__date">C 1800 по 1899 гг.</h3>
           <div class="catalog-accordion__list">
@@ -972,7 +979,6 @@
               <div tabindex="0" id="catalog-accordion__name105" class="catalog-accordion__name">Бьяджо д’Антонио Туччи
               </div>
             </div>
-
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name106" class="catalog-accordion__name">Веккьетта</div>
             </div>
@@ -1002,7 +1008,6 @@
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name114" class="catalog-accordion__name">Джорджоне</div>
             </div>
-
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name115" class="catalog-accordion__name">Парентино, Бернардо
               </div>
@@ -1026,7 +1031,6 @@
           </div>
           <h3 tabindex="0" class="catalog-accordion__date">C 1900 по 1999 гг.</h3>
           <div class="catalog-accordion__list">
-
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name121" class="catalog-accordion__name">Бенедетто ди Биндо</div>
             </div>
@@ -1059,7 +1063,6 @@
               <div tabindex="0" id="catalog-accordion__name129" class="catalog-accordion__name">Бьяджо д’Антонио Туччи
               </div>
             </div>
-
             <div class="catalog-accordion__item">
               <div tabindex="0" id="catalog-accordion__name130" class="catalog-accordion__name">Веккьетта</div>
             </div>
@@ -1560,7 +1563,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <!-- <script src="/js/choices.min.js"></script> -->
+  <script src="/js/choices.min.js"></script>
   <script src="js/just-validate.min.js"></script>
   <script src="js/inputmask.min.js"></script>
 
