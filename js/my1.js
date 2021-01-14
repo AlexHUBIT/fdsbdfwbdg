@@ -15,6 +15,14 @@ if (document.documentElement.clientWidth > 1919) {
       nextEl: '.start__swiper-next',
       prevEl: '.start__swiper-prev',
     },
+    a11y: {
+      prevSlideMessage: 'Кнопка предыдущий слайд',
+      nextSlideMessage: 'Кнопка следующий слайд',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
   })
 }
 if (document.documentElement.clientWidth < 1920 && document.documentElement.clientWidth > 1439) {
@@ -34,6 +42,14 @@ if (document.documentElement.clientWidth < 1920 && document.documentElement.clie
       nextEl: '.start__swiper-next',
       prevEl: '.start__swiper-prev',
     },
+    a11y: {
+      prevSlideMessage: 'Кнопка предыдущий слайд',
+      nextSlideMessage: 'Кнопка следующий слайд',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
   })
 }
 if (document.documentElement.clientWidth < 1440 && document.documentElement.clientWidth > 1199) {
@@ -52,6 +68,14 @@ if (document.documentElement.clientWidth < 1440 && document.documentElement.clie
     navigation: {
       nextEl: '.start__swiper-next',
       prevEl: '.start__swiper-prev',
+    },
+    a11y: {
+      prevSlideMessage: 'Кнопка предыдущий слайд',
+      nextSlideMessage: 'Кнопка следующий слайд',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
   })
 }
@@ -73,6 +97,10 @@ if (document.documentElement.clientWidth < 1200 && document.documentElement.clie
       nextEl: '.start__swiper-next',
       prevEl: '.start__swiper-prev',
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
   })
 }
 if (document.documentElement.clientWidth < 768 && document.documentElement.clientWidth > 479) {
@@ -92,6 +120,10 @@ if (document.documentElement.clientWidth < 768 && document.documentElement.clien
       nextEl: '.start__swiper-next',
       prevEl: '.start__swiper-prev',
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
   })
 }
 if (document.documentElement.clientWidth < 480) {
@@ -110,6 +142,10 @@ if (document.documentElement.clientWidth < 480) {
     navigation: {
       nextEl: '.start__swiper-next',
       prevEl: '.start__swiper-prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
   })
 };
@@ -170,19 +206,7 @@ document.getElementById('catalog-lang__img5').onclick = function () {
   document.getElementById('catalog-lang__btn4').classList.remove('catalog-lang__btn-click');
   document.getElementById('catalog-lang__btn1').classList.remove('catalog-lang__btn-click');
 }
-var mySwiper = new Swiper('.swiper-container1', {
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
-  slidesPerColumn: 1,
-  spaceBetween: 50,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination1',
-    type: 'fraction',
-    clickable: true,
-  },
-})
+
 document.querySelector('.events__btn').addEventListener('click', function () {
   document.querySelector('#elem_none1').classList.add('blockelem_inline-block'),
     document.querySelector('#elem_none2').classList.add('blockelem_inline-block'),
@@ -205,7 +229,15 @@ if (document.documentElement.clientWidth > 1439) {
     },
     navigation: {
       nextEl: '.swiper-next',
-      prevEl: '.swiper-prev',
+      prevEl: '.swiper-prev',      
+    },
+    a11y: {
+      prevSlideMessage: 'Кнопка предыдущий слайд',
+      nextSlideMessage: 'Кнопка следующий слайд',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
   })
 };
@@ -225,6 +257,14 @@ if (document.documentElement.clientWidth < 1440 && document.documentElement.clie
     navigation: {
       nextEl: '.swiper-next',
       prevEl: '.swiper-prev',
+    },
+    a11y: {
+      prevSlideMessage: 'Кнопка предыдущий слайд',
+      nextSlideMessage: 'Кнопка следующий слайд',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
   })
 };
@@ -245,6 +285,10 @@ if (document.documentElement.clientWidth < 1024 && document.documentElement.clie
       nextEl: '.swiper-next',
       prevEl: '.swiper-prev',
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
   })
 };
 if (document.documentElement.clientWidth > 1439) {
@@ -258,6 +302,14 @@ if (document.documentElement.clientWidth > 1439) {
     navigation: {
       nextEl: '.project__swiper-next',
       prevEl: '.project__swiper-prev',
+    },
+    a11y: {
+      prevSlideMessage: 'Кнопка предыдущий слайд',
+      nextSlideMessage: 'Кнопка следующий слайд',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
   })
 }
@@ -273,6 +325,14 @@ if (document.documentElement.clientWidth < 1440 && document.documentElement.clie
       nextEl: '.project__swiper-next',
       prevEl: '.project__swiper-prev',
     },
+    a11y: {
+      prevSlideMessage: 'Кнопка предыдущий слайд',
+      nextSlideMessage: 'Кнопка следующий слайд',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
   })
 }
 if (document.documentElement.clientWidth > 767 && document.documentElement.clientWidth < 1024) {
@@ -287,6 +347,10 @@ if (document.documentElement.clientWidth > 767 && document.documentElement.clien
       nextEl: '.project__swiper-next',
       prevEl: '.project__swiper-prev',
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
   })
 }
 if (document.documentElement.clientWidth < 768) {
@@ -300,6 +364,10 @@ if (document.documentElement.clientWidth < 768) {
     navigation: {
       nextEl: '.project__swiper-next',
       prevEl: '.project__swiper-prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
   })
 }
@@ -539,6 +607,10 @@ if (document.documentElement.clientWidth < 768) {
       type: 'bullets',
       clickable: true,
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
   })
 };
 document.getElementById('header-catalog__btn1').onclick = function () {
@@ -547,6 +619,12 @@ document.getElementById('header-catalog__btn1').onclick = function () {
   document.getElementById('header-catalog__list3').classList.remove('header_bot-active');
   document.getElementById('header-catalog__list4').classList.remove('header_bot-active');
   document.getElementById('header-catalog__list5').classList.remove('header_bot-active');
+
+  document.getElementById('header-catalog__btn1').classList.toggle('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn2').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn3').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn4').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn5').classList.remove('header-catalog__btn-active');
 };
 document.getElementById('header-catalog__btn2').onclick = function () {
   document.getElementById('header-catalog__list1').classList.remove('header_bot-active');
@@ -554,6 +632,12 @@ document.getElementById('header-catalog__btn2').onclick = function () {
   document.getElementById('header-catalog__list3').classList.remove('header_bot-active');
   document.getElementById('header-catalog__list4').classList.remove('header_bot-active');
   document.getElementById('header-catalog__list5').classList.remove('header_bot-active');
+
+  document.getElementById('header-catalog__btn1').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn2').classList.toggle('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn3').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn4').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn5').classList.remove('header-catalog__btn-active');
 };
 document.getElementById('header-catalog__btn3').onclick = function () {
   document.getElementById('header-catalog__list1').classList.remove('header_bot-active');
@@ -561,6 +645,12 @@ document.getElementById('header-catalog__btn3').onclick = function () {
   document.getElementById('header-catalog__list3').classList.toggle('header_bot-active');
   document.getElementById('header-catalog__list4').classList.remove('header_bot-active');
   document.getElementById('header-catalog__list5').classList.remove('header_bot-active');
+
+  document.getElementById('header-catalog__btn1').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn2').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn3').classList.toggle('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn4').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn5').classList.remove('header-catalog__btn-active');
 };
 document.getElementById('header-catalog__btn4').onclick = function () {
   document.getElementById('header-catalog__list1').classList.remove('header_bot-active');
@@ -568,6 +658,12 @@ document.getElementById('header-catalog__btn4').onclick = function () {
   document.getElementById('header-catalog__list3').classList.remove('header_bot-active');
   document.getElementById('header-catalog__list4').classList.toggle('header_bot-active');
   document.getElementById('header-catalog__list5').classList.remove('header_bot-active');
+
+  document.getElementById('header-catalog__btn1').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn2').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn3').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn4').classList.toggle('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn5').classList.remove('header-catalog__btn-active');
 };
 document.getElementById('header-catalog__btn5').onclick = function () {
   document.getElementById('header-catalog__list1').classList.remove('header_bot-active');
@@ -575,6 +671,12 @@ document.getElementById('header-catalog__btn5').onclick = function () {
   document.getElementById('header-catalog__list3').classList.remove('header_bot-active');
   document.getElementById('header-catalog__list4').classList.remove('header_bot-active');
   document.getElementById('header-catalog__list5').classList.toggle('header_bot-active');
+
+  document.getElementById('header-catalog__btn1').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn2').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn3').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn4').classList.remove('header-catalog__btn-active');
+  document.getElementById('header-catalog__btn5').classList.toggle('header-catalog__btn-active');
 };
 document.getElementById('public__title1').onclick = function () {
   document.getElementById('public__title1').classList.toggle('public__title1-active');

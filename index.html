@@ -129,6 +129,7 @@
         <form id="header__form" class="header__form header-form">
           <label class="header-form__label">
             <input class="header-form__input" type="text" name="search" placeholder="Поиск по сайту">
+            <span></span>
           </label>
         </form>
         <button id="header__search" class="header__search" aria-label="Поиск"></button>
@@ -139,6 +140,7 @@
 
   <section id="hero" class="hero">
     <div class="container">
+      <h1 class="hero__title">Художественная галерея Blanchard</h1>
       <h2 class="hero__head head-style">
         Прикоснитесь к прекрасному
       </h2>
@@ -170,7 +172,7 @@
     <div class="container container__gallery">
       <div class="gallery__block">
         <div class="gallery__top">
-          <h1 class="gallery__head head-style">Галерея</h1>
+          <h2 class="gallery__head head-style">Галерея</h2>
           <div class="gallery__text">Фильтровать по:</div>
           <select name="Фильтр" class="js-choice">
             <option value="#">Автор</option>
@@ -179,7 +181,7 @@
           </select>
         </div>
 
-        <div class="gallery__description gallery__description1">
+        <div class="gallery__description gallery__description-desktop">
           Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
           скачиваний <a class="gallery__link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией.
         </div>
@@ -217,11 +219,14 @@
           <div class="swiper-slide gallery_img"><img src="img/slide/Rectangle29.jpg" alt="Картина маслом"></div>
           <div class="swiper-slide gallery_img"><img src="img/slide/Rectangle30.jpg" alt="Картина маслом"></div>
         </div>
-        <div class="start__swiper-pagination swiper-pagination"></div>
-        <div tabindex="0" class="start__swiper-prev prev-condition"></div>
-        <div tabindex="0" class="start__swiper-next next-condition"></div>
+
+        <div class="slider__manual">
+          <div tabindex="0" class="start__swiper-prev swiper-button-prev"></div>
+          <div class="start__swiper-pagination swiper-pagination"></div>
+          <div tabindex="0" class="start__swiper-next swiper-button-next"></div>
+        </div>
       </div>
-      <div class="gallery__description gallery__description2">
+      <div class="gallery__description gallery__description-mobile">
         Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
         скачиваний <a class="gallery__link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией.
       </div>
@@ -232,16 +237,16 @@
       <div class="catalog__top">
         <h2 class="catalog__head head-style">Каталог</h2>
         <ul class="catalog__lang catalog-lang">
-          <li id="catalog-lang__btn1" class="catalog-lang__btn"><img aria-label="кнопка франция" tabindex="0"
-              id="catalog-lang__img1" class="catalog-lang__img" src="img/france.svg" alt="Кнопка франция"></li>
-          <li id="catalog-lang__btn2" class="catalog-lang__btn"><img aria-label="кнопка германия" tabindex="0"
-              id="catalog-lang__img2" class="catalog-lang__img" src="img/germany.svg" alt="Кнопка германия"></li>
-          <li id="catalog-lang__btn3" class="catalog-lang__btn"><img aria-label="кнопка италия" tabindex="0"
-              id="catalog-lang__img3" class="catalog-lang__img" src="img/italian.svg" alt="Кнопка италия"></li>
-          <li id="catalog-lang__btn4" class="catalog-lang__btn"><img aria-label="кнопка россия" tabindex="0"
-              id="catalog-lang__img4" class="catalog-lang__img" src="img/russia.svg" alt="Кнопка россия"></li>
-          <li id="catalog-lang__btn5" class="catalog-lang__btn"><img aria-label="кнопка бельгия" tabindex="0"
-              id="catalog-lang__img5" class="catalog-lang__img" src="img/belgium.svg" alt="Кнопка бельгия"></li>
+          <li id="catalog-lang__btn1" class="catalog-lang__btn"><button id="catalog-lang__img1"
+              class="catalog-lang__img catalog-lang__img-france" aria-label="французкий"></button></li>
+          <li id="catalog-lang__btn2" class="catalog-lang__btn"><button id="catalog-lang__img2"
+              class="catalog-lang__img catalog-lang__img-german" aria-label="немецкий"></button></li>
+          <li id="catalog-lang__btn3" class="catalog-lang__btn"><button id="catalog-lang__img3"
+              class="catalog-lang__img catalog-lang__img-italy" aria-label="итальянский"></button></li>
+          <li id="catalog-lang__btn4" class="catalog-lang__btn"><button id="catalog-lang__img4"
+              class="catalog-lang__img catalog-lang__img-russia" aria-label="русский"></button></li>
+          <li id="catalog-lang__btn5" class="catalog-lang__btn"><button id="catalog-lang__img5"
+              class="catalog-lang__img catalog-lang__img-belgium" aria-label="бельгийский"></button></li>
         </ul>
       </div>
       <div class="catalog__text">
@@ -1477,9 +1482,11 @@
               <a href="#" class="public__btn">Заказать</a>
             </div>
           </div>
-          <div class="start__swiper-pagination swiper-pagination public__swiper-pagination"></div>
-          <div tabindex="0" class="start__swiper-prev swiper-prev prev-condition swiper-prev-public"></div>
-          <div tabindex="0" class="start__swiper-next swiper-next next-condition swiper-next-public"></div>
+          <div class="slider__manual public__manual">
+            <div tabindex="0" class="start__swiper-prev swiper-prev swiper-button-prev swiper-prev-public"></div>
+            <div class="start__swiper-pagination swiper-pagination public__swiper-pagination"></div>
+            <div tabindex="0" class="start__swiper-next swiper-next swiper-button-next swiper-next-public"></div>
+          </div>
         </div>
       </div>
 
@@ -1515,8 +1522,10 @@
           <div class="swiper-slide project__swiper-slide project_slide8"></div>
           <div class="swiper-slide project__swiper-slide project_slide9"></div>
         </div>
-        <div tabindex="0" class="project__swiper-prev swiper-prev prev-condition"></div>
-        <div tabindex="0" class="project__swiper-next swiper-next next-condition"></div>
+        <div tabindex="0" class="project__swiper-prev start__swiper-prev swiper-prev prev-condition swiper-button-prev">
+        </div>
+        <div tabindex="0" class="project__swiper-next start__swiper-next swiper-next next-condition swiper-button-next">
+        </div>
         <div class="swiper__left"></div>
         <div class="swiper__right"></div>
       </div>
