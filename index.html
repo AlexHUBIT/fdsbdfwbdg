@@ -135,9 +135,8 @@
         <button id="header__search" class="header__search" aria-label="Поиск"></button>
       </div>
     </div>
-
   </header>
-
+<main>
   <section id="hero" class="hero">
     <div class="container">
       <h1 class="hero__title">Художественная галерея Blanchard</h1>
@@ -1231,7 +1230,7 @@
       <h2 class="head-style events__head">События</h2>
       <div class="events__swiper-container swiper-container">
         <div class="events__swiper-wrapper swiper-wrapper">
-          <div class="events__swiper-slide swiper-slide blockelem">
+          <div class="swiper-slide events__blockelem">
             <img src="img/Rectangle101.jpg" alt="Узоры" class="events__img">
             <div class="events__info">
               <div class="events__top">
@@ -1247,7 +1246,7 @@
               </div>
             </div>
           </div>
-          <div class="events__swiper-slide swiper-slide blockelem">
+          <div class="swiper-slide events__blockelem">
             <img src="img/Rectangle102.jpg" alt="Фигуры" class="events__img">
             <div class="events__info">
               <div class="events__top">
@@ -1263,7 +1262,7 @@
               </div>
             </div>
           </div>
-          <div id="elem_none4" class="events__swiper-slide swiper-slide blockelem">
+          <div id="elem_none4" class="swiper-slide events__blockelem">
             <img src="img/Rectangle103.jpg" alt="Выставка" class="events__img">
             <div class="events__info">
               <div class="events__top">
@@ -1281,7 +1280,7 @@
             </div>
           </div>
 
-          <div id="elem_none1" class="events__swiper-slide swiper-slide blockelem blockelem_none">
+          <div id="elem_none1" class="swiper-slide events__blockelem events__blockelem_none">
             <img src="img/Rectangle104.jpg" alt="Молодое искусство" class="events__img">
             <div class="events__info">
               <div class="events__top">
@@ -1298,7 +1297,7 @@
             </div>
           </div>
 
-          <div id="elem_none2" class="events__swiper-slide swiper-slide blockelem blockelem_none">
+          <div id="elem_none2" class="swiper-slide events__blockelem events__blockelem_none">
             <img src="img/Rectangle105.jpg" alt="Метафора серебра" class="events__img">
             <div class="events__info">
               <div class="events__top">
@@ -1315,7 +1314,7 @@
             </div>
           </div>
 
-          <div id="elem_none3" class="events__swiper-slide swiper-slide blockelem blockelem_none">
+          <div id="elem_none3" class="swiper-slide events__blockelem events__blockelem_none">
             <img src="img/Rectangle105.jpg" alt="Метафора серебра" class="events__img">
             <div class="events__info">
               <div class="events__top">
@@ -1341,10 +1340,10 @@
 
   <section id="public" class="public">
     <div class="container public__container">
-      <div class="public__container1">
+      <div class="public__container-one">
         <h2 class="head-style public__head">Издания</h2>
         <div class="public__block">
-          <h4 id="public__title1" class="public__title public__title1">Категории</h4>
+          <h3 id="public__title1" class="public__title public__title1">Категории</h3>
           <form class="public__checkboxes">
             <label class="public__label" for="check1">
               <input type="checkbox" name="check1" id="check1">
@@ -1396,9 +1395,9 @@
             </label>
           </form>
         </div>
-        <h4 class="public__title public__title2">
+        <h3 class="public__title public__title2">
           Цена
-        </h4>
+        </h3>
         <form class="public__price">
           <label class="public-price__label1">От<input aria-label="стоимость от" class="public-price__input1" type="tel"
               placeholder="50" name="от">до</label>
@@ -1406,7 +1405,7 @@
               placeholder="25 000" name="до">рублей</label>
         </form>
       </div>
-      <div class="public__container2">
+      <div class="public__container-two">
         <div class="public__swiper-container swiper-container">
           <div class="public__swiper-wrapper swiper-wrapper">
             <div class="public__swiper-slide swiper-slide">
@@ -1576,6 +1575,7 @@
       <div id="myMap" class="contacts__block2"></div>
     </div>
   </section>
+</main>
   <footer class="footer">
     <div class="container footer__container">
       <img src="img/Лого.svg" alt="Blanchard художественная галерея" class="header__logo">
@@ -1591,7 +1591,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="/js/choices.min.js"></script>
+  <script src="js/choices.min.js"></script>
   <script src="js/just-validate.min.js"></script>
   <script src="js/inputmask.min.js"></script>
 

@@ -208,11 +208,11 @@ document.getElementById('catalog-lang__img5').onclick = function () {
 }
 
 document.querySelector('.events__btn').addEventListener('click', function () {
-  document.querySelector('#elem_none1').classList.add('blockelem_inline-block'),
-    document.querySelector('#elem_none2').classList.add('blockelem_inline-block'),
-    document.querySelector('#elem_none3').classList.add('blockelem_inline-block'),
-    document.querySelector('#elem_none4').classList.add('blockelem_inline-block'),
-    document.querySelector('#events__btn1').classList.add('blockelem_inline-block1')
+  document.querySelector('#elem_none1').classList.add('events__blockelem_inline-block'),
+    document.querySelector('#elem_none2').classList.add('events__blockelem_inline-block'),
+    document.querySelector('#elem_none3').classList.add('events__blockelem_inline-block'),
+    document.querySelector('#elem_none4').classList.add('events__blockelem_inline-block'),
+    document.querySelector('#events__btn1').classList.add('events__blockelem_inline-block1')
 })
 if (document.documentElement.clientWidth > 1439) {
   var mySwiper = new Swiper('.public__swiper-container', {

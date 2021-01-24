@@ -502,7 +502,7 @@ img {
 .hero__title {
     height: 0;
     margin: 0;
-    overflow: hidden;
+    visibility: hidden;       
 }
 
 .hero__head {
@@ -1114,7 +1114,7 @@ img {
     flex-wrap: wrap;
 }
 
-.blockelem {
+.events__blockelem {
     display: flex;
     flex-direction: column;
     width: 31.25%;
@@ -1123,7 +1123,7 @@ img {
     color: var(--color-text-333);
 }
 
-.blockelem:not(:nth-child(3n)) {
+.events__blockelem:not(:nth-child(3n)) {
     margin-right: 50px;
 }
 
@@ -1513,18 +1513,18 @@ img {
     border-color: var(--color-c283f3) !important;
 }
 
-.blockelem_none {
+.events__blockelem_none {
     height: 0;
     margin-bottom: 0;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
 
-.blockelem_inline-block {
+.events__blockelem_inline-block {
     height: 700px;
 }
 
-.blockelem_inline-block1 {
+.events__blockelem_inline-block1 {
     display: none;
 }
 
@@ -1957,7 +1957,7 @@ img {
     .catalog-accordion__item:not(:nth-child(3n)) {
         margin-right: 11px;
     }
-    .blockelem:not(:nth-child(3n)) {
+    .events__blockelem:not(:nth-child(3n)) {
         margin-right: 43px;
     }
     .public__swiper-container {
@@ -2026,7 +2026,7 @@ img {
     .catalog-accordion__item:not(:nth-child(2n)) {
         margin-right: 50px;
     }
-    .blockelem:not(:nth-child(3n)) {
+    .events__blockelem:not(:nth-child(3n)) {
         margin-right: 33px;
     }
     .events__info {
@@ -2227,17 +2227,17 @@ img {
     .catalog-accordion__name {
         line-height: 31px;
     }
-    .blockelem {
+    .events__blockelem {
         width: 31.45%;
         height: 684px;
     }
-    .blockelem_none {
+    .events__blockelem_none {
         height: 0;
     }
-    .blockelem_inline-block {
+    .events__blockelem_inline-block {
         height: 684px;
     }
-    .blockelem:not(:nth-child(3n)) {
+    .events__blockelem:not(:nth-child(3n)) {
         margin-right: 26px;
     }
     .events__img {
@@ -2257,7 +2257,7 @@ img {
         padding-top: 80px;
         padding-bottom: 75px;
     }
-    .public__container1 {
+    .public__container-one {
         position: relative;
     }
     .public__block {
@@ -2483,13 +2483,13 @@ img {
     .events {
         padding-bottom: 86px;
     }
-    .blockelem {
+    .events__blockelem {
         width: 317px;
     }
-    .blockelem:not(:nth-child(3n)) {
+    .events__blockelem:not(:nth-child(3n)) {
         margin-right: 0;
     }
-    .blockelem:not(:nth-child(2n)) {
+    .events__blockelem:not(:nth-child(2n)) {
         margin-right: 34px;
     }
     .events__date {
@@ -2501,13 +2501,13 @@ img {
     .events__top {
         margin-bottom: 13px;
     }
-    .blockelem:nth-child(n+3) {
+    .events__blockelem:nth-child(n+3) {
         height: 0;
         margin-bottom: 0;
         overflow: hidden;
         transition: height 1s ease-in-out;
     }
-    .blockelem_inline-block {
+    .events__blockelem_inline-block {
         height: 684px !important;
         margin-bottom: 50px !important;
     }
@@ -2548,7 +2548,7 @@ img {
         top: 0;
         left: 0;
     }
-    .public__container1 {
+    .public__container-one {
         margin-bottom: 17px;
     }
     .public__swiper-container {
@@ -2794,12 +2794,12 @@ img {
         margin-top: 0;
         margin-bottom: 15px;
     }
-    .blockelem {
+    .events__blockelem {
         width: 450px;
         margin-bottom: 0;
         height: 684px !important;
     }
-    .blockelem:not(:nth-child(2n)) {
+    .events__blockelem:not(:nth-child(2n)) {
         margin-right: 0;
     }
     .events__swiper-pagination {
