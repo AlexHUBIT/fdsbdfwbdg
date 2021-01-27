@@ -109,6 +109,7 @@ img {
 
 .header__burger {
     display: none;
+    outline: none;
 }
 
 .header__logo {
@@ -482,6 +483,7 @@ img {
 
 .header__search {
     display: none;
+    outline: none;
 }
 
 /* hero */
