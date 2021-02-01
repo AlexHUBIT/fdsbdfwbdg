@@ -21,10 +21,10 @@ $(function () {
   $(".catalog__accordion").accordion("refresh");
 });
 
-document.querySelectorAll('.catalog-lang__img').forEach(function(tabsLang) {
-  tabsLang.addEventListener('click', function(LangList) {
+document.querySelectorAll('.catalog-lang__img').forEach(function (tabsLang) {
+  tabsLang.addEventListener('click', function (LangList) {
     const path = LangList.currentTarget.dataset.path
-    document.querySelectorAll('.catalog-lang__btn').forEach(function (tabNone) {      
+    document.querySelectorAll('.catalog-lang__btn').forEach(function (tabNone) {
       tabNone.classList.remove('catalog-lang__btn-click')
     })
     document.querySelector(`[data-target="${path}"]`).classList.add('catalog-lang__btn-click')
@@ -180,8 +180,8 @@ if (document.documentElement.clientWidth < 768) {
   })
 };
 
-document.querySelectorAll('.catalog-accordion__name').forEach(function(tabsPerson) {
-  tabsPerson.addEventListener('click', function(PersonList) {
+document.querySelectorAll('.catalog-accordion__name').forEach(function (tabsPerson) {
+  tabsPerson.addEventListener('click', function (PersonList) {
     const path = PersonList.currentTarget.dataset.path
     document.querySelectorAll('.person').forEach(function (tabnone) {
       tabnone.classList.add('person__none')
@@ -200,120 +200,27 @@ document.getElementById('header__burger').onclick = function () {
   document.getElementById('header__link').classList.toggle('header__link-active');
 };
 
-
-// document.querySelectorAll('.header-catalog__btn').forEach(function (tabsHeader) {
-//   tabsHeader.addEventListener('click', function(HeaderList) {
-//     const path = HeaderList.currentTarget.dataset.path
-//     document.querySelectorAll('.header-catalog__list').forEach(function (tabactive) {    
-//      if (`[data-target!="${path}"]`) {
-//       tabactive.classList.remove('header_bot-active')
-//     }
-    //  if(this.classList.contains('active'))
-      // tabactive.classList.remove('header_bot-active')  
-
-    // });
-    // document.querySelectorAll('.header-catalog__btn').forEach(function (tabactive) {      
-    //   tabactive.classList.remove('header-catalog__btn-active')      
-    // });
-    // document.querySelector(`[data-target = "${path}"]`).classList.remove('header_bot-active')
-    // document.querySelector(`[data-path = "${path}"]`).classList.remove('header-catalog__btn-active') 
-
-//     document.querySelector(`[data-target="${path}"]`).classList.toggle('header_bot-active')
-//     document.querySelector(`[data-path="${path}"]`).classList.toggle('header-catalog__btn-active')    
-//   })
-// })
-
-
-  // document.getElementById('catalog__btn1').onclick = function () {
-  //   document.querySelector('#catalog__list1').classList.toggle('header_bot-active')
-  //   document.querySelector('#catalog__btn1').classList.toggle('header-catalog__btn-active')
-  // }
-
-
-// Закройте выпадающее меню, если пользователь щелкает за его пределами
-// window.onclick = function(event) {
-//   if (!event.target.matches('#catalog__btn1') && !event.target.matches('#catalog__list1')) {
-//     var dropdowns = document.getElementsByClassName('header-catalog__list');
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('header_bot-active')) {
-//         openDropdown.classList.remove('header_bot-active');
-//       }
-//     }
-//   }
-  // if (!event.target.matches('#catalog__btn1')) {
-  //   var dropdowns = document.getElementsByClassName('header-catalog');
-  //   var i;
-  //   for (i = 0; i < dropdowns.length; i++) {
-  //     var openDropdown = dropdowns[i];
-  //     if (openDropdown.classList.contains('header-catalog__btn-active')) {
-  //       openDropdown.classList.remove('header-catalog__btn-active');
-  //     }
-  //   }
-  // }
-// } 
-
-document.getElementById('header-catalog__btn1').onclick = function () {
-  document.getElementById('header-catalog__list1').classList.toggle('header_bot-active');
-  document.getElementById('header-catalog__list2').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list3').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list4').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list5').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__btn1').classList.toggle('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn2').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn3').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn4').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn5').classList.remove('header-catalog__btn-active');
-};
-document.getElementById('header-catalog__btn2').onclick = function () {
-  document.getElementById('header-catalog__list1').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list2').classList.toggle('header_bot-active');
-  document.getElementById('header-catalog__list3').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list4').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list5').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__btn1').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn2').classList.toggle('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn3').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn4').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn5').classList.remove('header-catalog__btn-active');
-};
-document.getElementById('header-catalog__btn3').onclick = function () {
-  document.getElementById('header-catalog__list1').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list2').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list3').classList.toggle('header_bot-active');
-  document.getElementById('header-catalog__list4').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list5').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__btn1').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn2').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn3').classList.toggle('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn4').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn5').classList.remove('header-catalog__btn-active');
-};
-document.getElementById('header-catalog__btn4').onclick = function () {
-  document.getElementById('header-catalog__list1').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list2').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list3').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list4').classList.toggle('header_bot-active');
-  document.getElementById('header-catalog__list5').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__btn1').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn2').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn3').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn4').classList.toggle('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn5').classList.remove('header-catalog__btn-active');
-};
-document.getElementById('header-catalog__btn5').onclick = function () {
-  document.getElementById('header-catalog__list1').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list2').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list3').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list4').classList.remove('header_bot-active');
-  document.getElementById('header-catalog__list5').classList.toggle('header_bot-active');
-  document.getElementById('header-catalog__btn1').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn2').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn3').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn4').classList.remove('header-catalog__btn-active');
-  document.getElementById('header-catalog__btn5').classList.toggle('header-catalog__btn-active');
-};
+var el = document.getElementsByClassName('header-catalog__item');
+for (var i = 0; i < el.length; i++) {
+  el[i].addEventListener('click', showSub, false);
+  el[i].addEventListener("mouseleave", hideSub, false);
+}
+function showSub(e) {
+  if (this.children.length > 1) {
+    this.children[0].classList.toggle('header-catalog__btn-active');
+    this.children[1].classList.toggle('header_bot-active');
+  } else {
+    return false;
+  }
+}
+function hideSub(e) {
+  if (this.children.length > 1) {
+    this.children[0].classList.remove('header-catalog__btn-active');
+    this.children[1].classList.remove('header_bot-active');
+  } else {
+    return false;
+  }
+}
 
 document.getElementById('public__title1').onclick = function () {
   document.getElementById('public__title1').classList.toggle('public__title1-active');
