@@ -187,7 +187,11 @@ document.querySelectorAll('.catalog-accordion__name').forEach(function (tabsPers
       tabnone.classList.add('person__none')
       tabnone.classList.remove('person_vision')
     })
+    document.querySelectorAll('.catalog-accordion__name').forEach(function (taboutline) {
+      taboutline.classList.remove('catalog-accordion__outline')      
+    })
     document.querySelector(`[data-target="${path}"]`).classList.add('person_vision')
+    document.querySelector(`[data-path="${path}"]`).classList.add('catalog-accordion__outline')
   })
 })
 
