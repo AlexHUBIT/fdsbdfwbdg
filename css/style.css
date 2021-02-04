@@ -587,7 +587,7 @@ img {
 /* about */
 
 .about {
-    padding: 79px 0 70px 0;
+    padding: 79px 0 75px 0;
 }
 
 .about__head {
@@ -1011,7 +1011,7 @@ img {
 }
 
 .catalog-accordion__date {
-    padding: 43px 0 46px 0 !important;
+    padding: 43px 0 45px 0 !important;
     font-size: 24px !important;
     line-height: 24px !important;
     font-weight: 600 !important;
@@ -1051,7 +1051,9 @@ img {
 }
 
 .catalog-accordion__name {
+    position: relative;
     display: inline-block;
+    padding: 0 6px;
     line-height: 32px;
     cursor: pointer;
     transition-property: color, border;
@@ -1061,34 +1063,38 @@ img {
     outline: none;
 }
 
-.catalog-accordion__name:focus {
-    outline: 1px solid var(--color-9D5CD0);
-}
-
 .catalog-accordion__name:hover {
     color: var(--color-9D5CD0);
     border-bottom: 1px solid var(--color-9D5CD0);
 }
 
-.catalog-accordion__name:active {
-    color: var(--color-7943A4);
-    border-bottom: none;
+.catalog-accordion__name:focus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--color-c283f3);
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
 }
 
-.catalog-accordion__outline {
-    outline: 1px solid var(--color-9D5CD0);
+.catalog-accordion__outline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--color-7943A4);
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    z-index: 10;
 }
 
 .catalog-accordion__date:hover {
     color: var(--color-7943A4) !important;
     background-image: url(../img/acc_hover.svg) !important;
 }
-
-.catalog-accordion__date:focus {
-    outline: 2px solid var(--color-7943A4);
-}
-
-/* background-image: url(../img/acc_focus.svg); */
 
 .catalog-accordion__date:active {
     background-image: url(../img/acc_click_close.svg) !important;
@@ -1098,10 +1104,6 @@ img {
     background-image: url(../img/acc_open.svg);
     border-bottom: none !important;
 }
-
-/* .ui-accordion-header-active:focus {
-    background-image: url(../img/acc_open_focus.svg);
-} */
 
 .ui-accordion-header-active:hover {
     background-image: url(../img/acc_open_hover.svg) !important;
@@ -1163,11 +1165,6 @@ img {
     font-size: 16px;
 }
 
-.events__bot {
-    text-align: left;
-    font-size: 16px;
-}
-
 .events__swiper-wrapper {
     font-size: 0;
     text-align: center;
@@ -1216,29 +1213,54 @@ img {
 }
 
 .events__link {
+    position: relative;
     display: inline-block;
     padding-bottom: 4px;
-    border-bottom: 1px solid var(--color-c283f3);
+    text-align: left;
+    font-size: 16px;
     color: var(--color-c283f3);
-    transition-property: color, border, font-weight;
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.events__link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    border-bottom: 1px solid var(--color-c283f3);
+    transition-property: border;
     transition-duration: 0.15s;
     transition-timing-function: linear;
 }
 
 .events__link:hover {
-    font-weight: 700;
     color: var(--color-9D5CD0);
+}
+
+.events__link:focus::before {
+    left: -5px;
+    width: 100px;
+    height: 100%;
+    border: 1px solid var(--color-9D5CD0);
+}
+
+.events__link:hover:before {
     border-color: var(--color-9D5CD0);
 }
 
 .events__link:active {
-    font-weight: 700;
     color: var(--color-7943A4);
-    border-color: var(--color-7943A4);
 }
 
 .events__link:focus {
-    outline: 2px solid var(--color-7943A4);
+    outline: none;
+}
+
+.events__link:active:before {
+    border-color: var(--color-7943A4);
 }
 
 .events__btn {
@@ -1357,7 +1379,9 @@ img {
 }
 
 .public__label {
-    display: block;
+    display: inline-block;
+    height: 32px;
+    margin-right: auto;
     cursor: pointer;
     position: relative;
     font-size: 16px;
@@ -1536,7 +1560,7 @@ img {
     border-color: var(--color-c283f3) !important;
 }
 
-.events__blockelem_none {
+.events__blockelem:nth-child(n+4) {
     height: 0;
     margin-bottom: 0;
     overflow: hidden;
@@ -2052,6 +2076,9 @@ img {
     .events__blockelem:not(:nth-child(3n)) {
         margin-right: 33px;
     }
+    .events__img {
+        height: auto;
+    }
     .events__info {
         padding-left: 25px;
     }
@@ -2254,7 +2281,7 @@ img {
         width: 31.45%;
         height: 684px;
     }
-    .events__blockelem_none {
+    .events__blockelem:nth-child(n+4) {
         height: 0;
     }
     .events__blockelem_inline-block {
@@ -2807,7 +2834,7 @@ img {
     .catalog-accordion__name {
         font-size: 16px;
     }
-    .events__swiper-container {
+    .events__cards {
         overflow: hidden;
     }
     .events__swiper-wrapper {

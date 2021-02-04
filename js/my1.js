@@ -161,7 +161,7 @@ var mySwiper = new Swiper('.project__swiper', {
 })
 
 if (document.documentElement.clientWidth < 768) {
-  var mySwiper = new Swiper('.events__swiper-container', {
+  var mySwiper = new Swiper('.events__cards', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
