@@ -28,8 +28,24 @@ document.querySelectorAll('.catalog-lang__img').forEach(function (tabsLang) {
       tabNone.classList.remove('catalog-lang__btn-click')
     })
     document.querySelector(`[data-target="${path}"]`).classList.add('catalog-lang__btn-click')
+    document.querySelectorAll('.catalog-accordion__date').forEach(function (accord) {
+      accord.classList.remove('.ui-accordion-header-active')
+      accord.classList.add('.ui-accordion-header-collapsed')      
+    })
+    document.querySelector('#ui-id-1').classList.add('ui-accordion-header-active')
+    document.querySelectorAll('.catalog-accordion__list').forEach(function (accord) {
+      accord.classList.remove('.ui-accordion-content-active')
+       accord.style.display = 'none';   
+    })
+    document.querySelector('#ui-id-2').classList.add('ui-accordion-content-active')
+    document.querySelector('#ui-id-2').style.display = 'flex';
   })
+  
+
 })
+
+
+
 
 
 document.querySelector('.events__btn').addEventListener('click', function () {
@@ -92,6 +108,7 @@ var mySwiper = new Swiper('.start_swiper-container', {
 })
 
 if (document.documentElement.clientWidth > 767) {
+  // document.querySelector('.events__cards-list').classList.add('swiper-wrapper') 
   var mySwiper = new Swiper('.public__swiper-container', {
     direction: 'horizontal',
     loop: true,
@@ -125,6 +142,7 @@ if (document.documentElement.clientWidth > 767) {
       }
     }
   })
+   
 };
 
 var mySwiper = new Swiper('.project__swiper', {
