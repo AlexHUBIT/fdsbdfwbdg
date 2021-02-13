@@ -270,12 +270,13 @@
           <ul class="catalog__lang catalog-lang">
             <li data-target="lang1" class="catalog-lang__btn"><button class="catalog-lang__img catalog-lang__img-france"
                 data-path="lang1" aria-label="французкий"></button></li>
-            <li data-target="lang2" class="catalog-lang__btn"><button  class="catalog-lang__img catalog-lang__img-german"
+            <li data-target="lang2" class="catalog-lang__btn"><button class="catalog-lang__img catalog-lang__img-german"
                 data-path="lang2" aria-label="немецкий"></button></li>
-            <li data-target="lang3" class="catalog-lang__btn"><button class="catalog-lang__img catalog-lang__img-italy"
-                data-path="lang3" aria-label="итальянский"></button></li>
-            <li data-target="lang4" class="catalog-lang__btn"><button
-                class="catalog-lang__img catalog-lang__img-russia" data-path="lang4" aria-label="русский"></button></li>
+            <li data-target="lang3" class="catalog-lang__btn catalog-lang__btn-click"><button
+                class="catalog-lang__img catalog-lang__img-italy" data-path="lang3" aria-label="итальянский"></button>
+            </li>
+            <li data-target="lang4" class="catalog-lang__btn"><button class="catalog-lang__img catalog-lang__img-russia"
+                data-path="lang4" aria-label="русский"></button></li>
             <li data-target="lang5" class="catalog-lang__btn"><button
                 class="catalog-lang__img catalog-lang__img-belgium" data-path="lang5" aria-label="бельгийский"></button>
             </li>
@@ -697,564 +698,606 @@
           </div>
           <div id="accordion" class="catalog__accordion catalog-accordion">
             <h3 tabindex="0" class="catalog-accordion__date">C 1400 по 1499 гг.</h3>
-            <div class="catalog-accordion__list">
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+            <div class="catalog-accordion__lang">
+              <div class="catalog-accordion__list" data-language="lang1">Тут Французские деятели искусства</div>
+              <div class="catalog-accordion__list" data-language="lang2">Здесь из Германии</div>
+              <div class="catalog-accordion__list catalog-accordion__list-active" data-language="lang3">
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
+                    Гирландайо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
                 </div>
               </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
-                  Гирландайо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
-              </div>
+              <div class="catalog-accordion__list" data-language="lang4">А тут из России</div>
+              <div class="catalog-accordion__list" data-language="lang5">И из Бельгии</div>
             </div>
             <h3 tabindex="0" class="catalog-accordion__date">C 1500 по 1599 гг.</h3>
-            <div class="catalog-accordion__list">
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+            <div class="catalog-accordion__lang">
+              <div class="catalog-accordion__list" data-language="lang1">Тут Французские деятели искусства</div>
+              <div class="catalog-accordion__list" data-language="lang2">Здесь из Германии</div>
+              <div class="catalog-accordion__list catalog-accordion__list-active" data-language="lang3">
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
+                    Гирландайо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
                 </div>
               </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
-                  Гирландайо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
-              </div>
+              <div class="catalog-accordion__list" data-language="lang4">А тут из России</div>
+              <div class="catalog-accordion__list" data-language="lang5">И из Бельгии</div>
             </div>
             <h3 tabindex="0" class="catalog-accordion__date">C 1600 по 1699 гг.</h3>
-            <div class="catalog-accordion__list">
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+            <div class="catalog-accordion__lang">
+              <div class="catalog-accordion__list" data-language="lang1">Тут Французские деятели искусства</div>
+              <div class="catalog-accordion__list" data-language="lang2">Здесь из Германии</div>
+              <div class="catalog-accordion__list catalog-accordion__list-active" data-language="lang3">
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
+                    Гирландайо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
                 </div>
               </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
-                  Гирландайо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
-              </div>
+              <div class="catalog-accordion__list" data-language="lang4">А тут из России</div>
+              <div class="catalog-accordion__list" data-language="lang5">И из Бельгии</div>
             </div>
             <h3 tabindex="0" class="catalog-accordion__date">C 1700 по 1799 гг.</h3>
-            <div class="catalog-accordion__list">
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+            <div class="catalog-accordion__lang">
+              <div class="catalog-accordion__list" data-language="lang1">Тут Французские деятели искусства</div>
+              <div class="catalog-accordion__list" data-language="lang2">Здесь из Германии</div>
+              <div class="catalog-accordion__list catalog-accordion__list-active" data-language="lang3">
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
+                    Гирландайо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
                 </div>
               </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
-                  Гирландайо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
-              </div>
+              <div class="catalog-accordion__list" data-language="lang4">А тут из России</div>
+              <div class="catalog-accordion__list" data-language="lang5">И из Бельгии</div>
             </div>
             <h3 tabindex="0" class="catalog-accordion__date">C 1800 по 1899 гг.</h3>
-            <div class="catalog-accordion__list">
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+            <div class="catalog-accordion__lang">
+              <div class="catalog-accordion__list" data-language="lang1">Тут Французские деятели искусства</div>
+              <div class="catalog-accordion__list" data-language="lang2">Здесь из Германии</div>
+              <div class="catalog-accordion__list catalog-accordion__list-active" data-language="lang3">
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
+                    Гирландайо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
                 </div>
               </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
-                  Гирландайо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
-              </div>
+              <div class="catalog-accordion__list" data-language="lang4">А тут из России</div>
+              <div class="catalog-accordion__list" data-language="lang5">И из Бельгии</div>
             </div>
             <h3 tabindex="0" class="catalog-accordion__date">C 1900 по 1999 гг.</h3>
-            <div class="catalog-accordion__list">
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+            <div class="catalog-accordion__lang">
+              <div class="catalog-accordion__list" data-language="lang1">Тут Французские деятели искусства</div>
+              <div class="catalog-accordion__list" data-language="lang2">Здесь из Германии</div>
+              <div class="catalog-accordion__list catalog-accordion__list-active" data-language="lang3">
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
+                    Гирландайо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
                 </div>
               </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
-                  Гирландайо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
-              </div>
+              <div class="catalog-accordion__list" data-language="lang4">А тут из России</div>
+              <div class="catalog-accordion__list" data-language="lang5">И из Бельгии</div>
             </div>
             <h3 tabindex="0" class="catalog-accordion__date">C 2000 г.</h3>
-            <div class="catalog-accordion__list">
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+            <div class="catalog-accordion__lang">
+              <div class="catalog-accordion__list" data-language="lang1">Тут Французские деятели искусства</div>
+              <div class="catalog-accordion__list" data-language="lang2">Здесь из Германии</div>
+              <div class="catalog-accordion__list catalog-accordion__list-active" data-language="lang3">
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="1">Бенедетто ди Биндо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="2">Бергоньоне, Амброджо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="3">Биссоло, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="4">Больтраффио, Джованни
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
+                    Гирландайо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
+                  </div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
+                </div>
+                <div class="catalog-accordion__item">
+                  <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
                 </div>
               </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="5">Бонсиньори, Франческо
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="6">Боттичини, Рафаэлло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="7">Брамантино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="8">Бреа, Людовико</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="9">Бьяджо д’Антонио Туччи
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="10">Веккьетта</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="11">Андреа Верроккьо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name catalog-accordion__outline" data-path="12">Доменико
-                  Гирландайо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="13">Беноццо Гоццоли</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="14">Граначчи, Франческо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="15">Грегорио ди Чекко</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="16">Джованни да Удине</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="17">Джованни ди Паоло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="18">Джорджоне</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="19">Парентино, Бернардо</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang5">
-                <div tabindex="0" class="catalog-accordion__name" data-path="20">Пезеллино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang1">
-                <div tabindex="0" class="catalog-accordion__name" data-path="21">Пьетро Перуджино</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang2">
-                <div tabindex="0" class="catalog-accordion__name" data-path="22">Перуцци, Бальдассаре
-                </div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang3">
-                <div tabindex="0" class="catalog-accordion__name" data-path="23">Пизанелло</div>
-              </div>
-              <div class="catalog-accordion__item" data-shlapa="lang4">
-                <div tabindex="0" class="catalog-accordion__name" data-path="24">Пинтуриккьо</div>
-              </div>
+              <div class="catalog-accordion__list" data-language="lang4">А тут из России</div>
+              <div class="catalog-accordion__list" data-language="lang5">И из Бельгии</div>
             </div>
           </div>
         </div>
@@ -1365,30 +1408,30 @@
           <div class="public__block">
             <h3 id="public__title1" class="public__title public__title1">Категории</h3>
             <form class="public__checkboxes">
-             <div class="public__check-block">
-              <label class="public__label" for="check1">
-                <input type="checkbox" name="check1" id="check1">
-                <span class="check">Бестселлеры</span>
-              </label>
-             </div>
-             <div class="public__check-block">
-              <label class="public__label" for="check2">
-                <input type="checkbox" name="check2" id="check2">
-                <span class="check">Искусство</span>
-              </label>
-             </div>
+              <div class="public__check-block">
+                <label class="public__label" for="check1">
+                  <input type="checkbox" name="check1" id="check1">
+                  <span class="check">Бестселлеры</span>
+                </label>
+              </div>
+              <div class="public__check-block">
+                <label class="public__label" for="check2">
+                  <input type="checkbox" name="check2" id="check2">
+                  <span class="check">Искусство</span>
+                </label>
+              </div>
               <div class="public__check-block">
                 <label class="public__label" for="check3">
                   <input type="checkbox" name="check3" id="check3">
                   <span class="check">Архитектура</span>
                 </label>
               </div>
-             <div class="public__check-block">
-              <label class="public__label" for="check4">
-                <input type="checkbox" name="check4" id="check4">
-                <span class="check">Дизайн</span>
-              </label>
-             </div>
+              <div class="public__check-block">
+                <label class="public__label" for="check4">
+                  <input type="checkbox" name="check4" id="check4">
+                  <span class="check">Дизайн</span>
+                </label>
+              </div>
               <div class="public__check-block">
                 <label class="public__label" for="check5">
                   <input type="checkbox" name="check5" id="check5">
@@ -1407,30 +1450,30 @@
                   <span class="check">Художественная литература</span>
                 </label>
               </div>
-             <div class="public__check-block">
-              <label class="public__label" for="check8">
-                <input type="checkbox" name="check8" id="check8">
-                <span class="check">Публицистика</span>
-              </label>
-             </div>
+              <div class="public__check-block">
+                <label class="public__label" for="check8">
+                  <input type="checkbox" name="check8" id="check8">
+                  <span class="check">Публицистика</span>
+                </label>
+              </div>
               <div class="public__check-block">
                 <label class="public__label" for="check9">
                   <input type="checkbox" name="check9" id="check9">
                   <span class="check">Путеводители</span>
                 </label>
               </div>
-             <div class="public__check-block">
-              <label class="public__label" for="check10">
-                <input type="checkbox" name="check10" id="check10">
-                <span class="check">Философия</span>
-              </label>
-             </div>
-             <div class="public__check-block">
-              <label class="public__label" for="check11">
-                <input type="checkbox" name="check11" id="check11">
-                <span class="check">Учебная литература</span>
-              </label>
-             </div>
+              <div class="public__check-block">
+                <label class="public__label" for="check10">
+                  <input type="checkbox" name="check10" id="check10">
+                  <span class="check">Философия</span>
+                </label>
+              </div>
+              <div class="public__check-block">
+                <label class="public__label" for="check11">
+                  <input type="checkbox" name="check11" id="check11">
+                  <span class="check">Учебная литература</span>
+                </label>
+              </div>
               <div class="public__check-block">
                 <label class="public__label" for="check12">
                   <input type="checkbox" name="check12" id="check12">
@@ -1619,7 +1662,7 @@
             <a aria-label="мессенджер телеграм" class="contacts__link contacts__telegram" href="#"></a>
           </div>
         </div>
-        <div id="myMap" class="contacts__block2"></div>
+        <div class="contacts__block2"><div id="myMap"></div></div>
       </div>
     </section>
   </main>

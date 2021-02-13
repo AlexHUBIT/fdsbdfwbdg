@@ -502,7 +502,7 @@ img {
 .hero {
     margin-top: -70px;
     padding-top: 142px;
-    padding-bottom: 125px;
+    padding-bottom: 123px;
     color: var(--color-text-fff);
     background-color: #666;
     background-image: url(../img/hero_back1.jpg);
@@ -602,7 +602,7 @@ img {
 /* gallery */
 
 .gallery {
-    padding: 80px 0 69px 0;
+    padding: 80px 0 70px 0;
     color: var(--color-text-fff);
     background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3.jpg);
     background-position: center;
@@ -855,7 +855,7 @@ img {
 /* catalog */
 
 .catalog {
-    padding: 80px 0 82px 0;
+    padding: 82px 0 83px 0;
 }
 
 .catalog__top {
@@ -996,7 +996,7 @@ img {
 }
 
 .person__date {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 12px;
     line-height: 16px;
     color: #999;
@@ -1033,13 +1033,20 @@ img {
     border-top: 1px solid #cacaca !important;
 }
 
-.catalog-accordion__list {
-    display: flex;
-    flex-wrap: wrap;
+.catalog-accordion__lang {
     height: auto !important;
     padding: 26px 25px 15px 0 !important;
     border-top: 1px solid var(--color-9D5CD0) !important;
     border-bottom: 1px solid var(--color-9D5CD0) !important;
+}
+
+.catalog-accordion__list {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.catalog-accordion__list-active {
+    display: flex;
 }
 
 .catalog-accordion__item {
@@ -1128,7 +1135,7 @@ img {
     opacity: 1;
 }
 
-.catalog__filter {
+/* .catalog__filter {
     display: none;
     position: absolute;
     width: 0;
@@ -1136,7 +1143,7 @@ img {
     overflow: hidden;
     opacity: 0;
     margin: 0;
-}
+} */
 
 /* events */
 
@@ -1145,7 +1152,7 @@ img {
 }
 
 .events__head {
-    margin: 0 0 17px 0;
+    margin: 0 0 15px 0;
     line-height: 64px;
 }
 
@@ -1167,13 +1174,9 @@ img {
     margin-right: 50px;
 }
 
-.events__img {
-    width: 100%;
-}
-
 .events__top {
-    margin-bottom: 10px;
-    padding-top: 3px;
+    margin-bottom: 11px;
+    padding-top: 6px;
     height: 310px;
     overflow: hidden;
     text-align: left;
@@ -1190,7 +1193,7 @@ img {
     height: 401px;
     flex-direction: column;
     margin-top: -1px;
-    padding: 14px 18px 30px 49px;
+    padding: 10px 18px 30px 49px;
     border: 1px solid #cacaca;
     border-top: none;
 }
@@ -1342,8 +1345,8 @@ img {
 /* public */
 
 .public {
-    padding: 79px 0;
-    padding-bottom: 66px;
+    padding: 80px 0;
+    padding-bottom: 64px;
     color: var(--color-text-fff);
     background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash4.jpg);
     background-color: #999;
@@ -1367,6 +1370,7 @@ img {
 
 .public__title {
     margin: 0;
+    font-size: 16px;
     line-height: 32px;
     font-weight: 700;
 }
@@ -1560,6 +1564,7 @@ img {
 }
 
 .public__description-right {
+    line-height: 22px;
     font-style: italic;
 }
 
@@ -1619,7 +1624,7 @@ img {
 /* project */
 
 .project {
-    padding: 80px 0;
+    padding: 81px 0;
 }
 
 .project__head {
@@ -1814,11 +1819,12 @@ img {
 
 .contacts__block {
     display: flex;
+   
 }
 
 .contacts__block1 {
     width: 35.5%;
-    padding: 124px 0 123px calc(50% - 800px);
+    padding: 124px 0 121px calc(50% - 800px);
     border: 1px solid #cacaca;
 }
 
@@ -1928,6 +1934,7 @@ img {
 
 .contacts__block2 {
     width: 64.5%;
+   
 }
 
 .ymaps-2-1-78-controls__toolbar {
@@ -1953,8 +1960,10 @@ img {
 /* footer */
 
 .footer {
+    
     padding: 47px 0;
     background-color: #000;
+  
 }
 
 .footer__container {
@@ -2039,7 +2048,7 @@ img {
         width: 315px !important;
         height: 315px;
     }
-    .catalog-accordion__list {
+    .catalog-accordion__lang {
         padding-right: 0 !important;
     }
     .catalog-accordion__item {
@@ -2108,7 +2117,7 @@ img {
     .start_swiper-container, .public__swiper-container {
         max-width: 655px;
     }
-    .catalog-accordion__list {
+    .catalog-accordion__lang {
         padding-right: 0 !important;
     }
     .catalog-accordion__item:not(:nth-child(3n)) {
@@ -2320,7 +2329,7 @@ img {
     .catalog__accordion {
         width: 47.3%;
     }
-    .catalog-accordion__list {
+    .catalog-accordion__lang {
         padding-bottom: 30px !important;
     }
     .catalog-accordion__item {
@@ -3176,7 +3185,7 @@ img {
         padding-top: 25px !important;
         padding-bottom: 25px !important;
     }
-    .catalog-accordion__list {
+    .catalog-accordion__lang {
         padding-top: 18px !important;
         padding-bottom: 19px !important;
     }

@@ -28,17 +28,15 @@ document.querySelectorAll('.catalog-lang__img').forEach(function (tabsLang) {
       tabNone.classList.remove('catalog-lang__btn-click')
     })
     document.querySelector(`[data-target="${path}"]`).classList.toggle('catalog-lang__btn-click')
-    document.querySelectorAll(".catalog-accordion__item").forEach(function(filterall) {
-      filterall.classList.add("catalog__filter");
+    document.querySelectorAll(".catalog-accordion__list").forEach(function(filterall) {
+      filterall.classList.remove("catalog-accordion__list-active");
       
     })
-    document.querySelectorAll(`[data-shlapa="${path}"]`).forEach(function (filter) {
-      filter.classList.toggle("catalog__filter");
+    document.querySelectorAll(`[data-language="${path}"]`).forEach(function (filter) {
+      filter.classList.add("catalog-accordion__list-active");
     })   
   })
 })
-
-
 
 document.querySelector('.events__btn').addEventListener('click', function () {
   document.querySelectorAll('.events__blockelem').forEach(function (vi) {
