@@ -176,6 +176,7 @@ if (document.documentElement.clientWidth < 768) {
     slidesPerColumn: 1,
     spaceBetween: 50,
     loop: true,
+    wrapperClass: 'events__cards-list',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -198,7 +199,7 @@ document.querySelectorAll('.catalog-accordion__name').forEach(function (tabsPers
     document.querySelectorAll('.catalog-accordion__name').forEach(function (taboutline) {
       taboutline.classList.remove('catalog-accordion__outline')      
     })
-    document.querySelector(`[data-target="${path}"]`).classList.add('person_vision')
+    document.querySelector(`[data-target="${path}"]`).classList.add('person_vision');
     document.querySelector(`[data-path="${path}"]`).classList.add('catalog-accordion__outline')
   })
 })
