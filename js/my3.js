@@ -25,8 +25,11 @@ const defaultSelect = () => {
         itemSelectText: '',
         position: false,
     });
-
-
 };
-
 defaultSelect();
+
+new window.JustValidateJustValidate('.contacts__form', {
+    tooltip: {
+        fadeOutClass: '.hide' // default value - just-validate-tooltip-hide
+    }
+});

@@ -1193,13 +1193,12 @@ img {
 }
 
 .events__info {
-    display: flex;
-    height: 401px;
-    flex-direction: column;
+    max-height: 401px;
     margin-top: -1px;
-    padding: 10px 18px 30px 49px;
+    padding: 10px 18px 39px 49px;
     border: 1px solid #cacaca;
     border-top: none;
+    text-align: left;
 }
 
 .events__img {
@@ -1595,7 +1594,7 @@ img {
 }
 
 .events__blockelem_inline-block {
-    height: 700px !important;
+    max-height: 700px !important;
     visibility: visible !important;
 }
 
@@ -1624,6 +1623,9 @@ img {
 .project__title {
     margin-top: 0;
     margin-bottom: 22px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
 }
 
 .project__icon {
@@ -1677,12 +1679,6 @@ img {
 
 .project__link:focus {
     border: 2px solid var(--color-7943A4);
-}
-
-.project__title {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
 }
 
 .project__swiper {
@@ -1851,6 +1847,11 @@ img {
     outline: none;
 }
 
+
+.js-validate-error-label {
+   display: none;
+} 
+
 .contacts__btn {
     width: 157px;
     height: 60px;
@@ -1900,6 +1901,7 @@ img {
     height: 40px;
     border-radius: 50%;
     background-repeat: no-repeat;
+    transition: transform 0.15s linear;
 }
 
 .contacts__link:focus {
@@ -1968,49 +1970,40 @@ img {
     width: 46px;
     height: 46px;
     border-radius: 50%;
+    
 }
 
 .footer__link:not(:last-child) {
     margin-right: 18px;
 }
 
-.footer__vk {
+.footer__social-link {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url(../img/vk.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    transition: transform 0.15s linear;
+}
+
+.footer__social-link:hover, .contacts__link:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+.footer__social-link:focus {
+    outline: 1px solid var(--color-9D5CD0);
+}
+
+.footer__vk {
+    background-image: url(../img/vk.svg);
 }
 
 .footer__inst {
-    display: block;
-    width: 100%;
-    height: 100%;
     background-image: url(../img/inst.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .footer__face {
-    display: block;
-    width: 100%;
-    height: 100%;
     background-image: url(../img/face.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.footer__vk:focus {
-    outline: 1px solid var(--color-9D5CD0);
-}
-
-.footer__inst:focus {
-    outline: 1px solid var(--color-9D5CD0);
-}
-
-.footer__face:focus {
-    outline: 1px solid var(--color-9D5CD0);
 }
 
 @media (max-width:1639px) {
