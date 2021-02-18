@@ -72,7 +72,7 @@ var mySwiper = new Swiper('.start_swiper-container', {
     480: {
       slidesPerView: 2,
       slidesPerColumn: 1,
-      spaceBetween: 10
+      spaceBetween: 50
     },
     768: {
       slidesPerView: 2,
